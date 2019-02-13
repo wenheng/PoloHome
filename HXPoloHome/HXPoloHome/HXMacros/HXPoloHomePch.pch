@@ -15,8 +15,6 @@
 //第三方库
 #import <MyLayout.h>
 #import <Masonry.h>
-#import <UIImageView+WebCache.h>
-#import <UIButton+WebCache.h>
 #import <CocoaLumberjack.h>
 
 //自定义

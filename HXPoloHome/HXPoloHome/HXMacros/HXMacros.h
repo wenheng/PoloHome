@@ -72,7 +72,8 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 //适配高度
 #define HXHeight(height) (kIPHONE_WIDTH != 375 ? (height)*kIPHONE_WIDTH/375 : (height))
 //适配字体大小
-#define UMEAdaptFont(font) (kIPHONE_WIDTH != 375 ? floor((font)*kIPHONE_WIDTH / 375) : (font))
+#define HXFont(font) (kIPHONE_WIDTH != 375 ? floor((font)*kIPHONE_WIDTH / 375) : (font))
+
 
 
 
