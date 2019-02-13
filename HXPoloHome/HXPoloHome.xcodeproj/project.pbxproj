@@ -16,6 +16,7 @@
 		96570A9B2213EED70040DE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A9A2213EED70040DE1B /* main.m */; };
 		96570AA52213EED70040DE1B /* HXPoloHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AA42213EED70040DE1B /* HXPoloHomeTests.m */; };
 		96570AB02213EED70040DE1B /* HXPoloHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */; };
+		96570AC02213FBC40040DE1B /* HXConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570ABF2213FBC40040DE1B /* HXConsts.m */; };
 		CA6D1527B6B85D94D0E9ED87 /* libPods-HXPoloHomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */; };
 		D5132A62961E4E9CB191018C /* libPods-HXPoloHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,10 @@
 		96570AAB2213EED70040DE1B /* HXPoloHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXPoloHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXPoloHomeUITests.m; sourceTree = "<group>"; };
 		96570AB12213EED70040DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96570ABE2213FBC40040DE1B /* HXConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXConsts.h; sourceTree = "<group>"; };
+		96570ABF2213FBC40040DE1B /* HXConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXConsts.m; sourceTree = "<group>"; };
+		96570AC22213FBF00040DE1B /* HXPoloHomePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXPoloHomePch.pch; sourceTree = "<group>"; };
+		96570AC32213FCCB0040DE1B /* HXMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMacros.h; sourceTree = "<group>"; };
 		BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeUITests/Pods-HXPoloHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +136,8 @@
 		96570A8A2213EED60040DE1B /* HXPoloHome */ = {
 			isa = PBXGroup;
 			children = (
+				96570AC12213FBD10040DE1B /* Macros */,
+				96570ABD2213FBA30040DE1B /* HXConst */,
 				96570A8B2213EED60040DE1B /* AppDelegate.h */,
 				96570A8C2213EED60040DE1B /* AppDelegate.m */,
 				96570A8E2213EED60040DE1B /* ViewController.h */,
@@ -160,6 +167,24 @@
 				96570AB12213EED70040DE1B /* Info.plist */,
 			);
 			path = HXPoloHomeUITests;
+			sourceTree = "<group>";
+		};
+		96570ABD2213FBA30040DE1B /* HXConst */ = {
+			isa = PBXGroup;
+			children = (
+				96570ABE2213FBC40040DE1B /* HXConsts.h */,
+				96570ABF2213FBC40040DE1B /* HXConsts.m */,
+			);
+			path = HXConst;
+			sourceTree = "<group>";
+		};
+		96570AC12213FBD10040DE1B /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				96570AC22213FBF00040DE1B /* HXPoloHomePch.pch */,
+				96570AC32213FCCB0040DE1B /* HXMacros.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 		C5C39842BBBAC29EBE11865D /* Frameworks */ = {
@@ -238,6 +263,7 @@
 		96570A802213EED60040DE1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HX;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = huangwenheng;
 				TargetAttributes = {
@@ -384,6 +410,7 @@
 				96570A902213EED60040DE1B /* ViewController.m in Sources */,
 				96570A9B2213EED70040DE1B /* main.m in Sources */,
 				96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */,
+				96570AC02213FBC40040DE1B /* HXConsts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +584,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HXPoloHome/Macros/HXPoloHomePch.pch;
 				INFOPLIST_FILE = HXPoloHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,6 +604,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HXPoloHome/Macros/HXPoloHomePch.pch;
 				INFOPLIST_FILE = HXPoloHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
