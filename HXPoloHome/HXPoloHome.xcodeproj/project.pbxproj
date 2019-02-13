@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		527DAACB518703A713F9EFCC /* libPods-HXPoloHomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */; };
+		96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A8C2213EED60040DE1B /* AppDelegate.m */; };
+		96570A902213EED60040DE1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A8F2213EED60040DE1B /* ViewController.m */; };
+		96570A932213EED60040DE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96570A912213EED60040DE1B /* Main.storyboard */; };
+		96570A952213EED70040DE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96570A942213EED70040DE1B /* Assets.xcassets */; };
+		96570A982213EED70040DE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96570A962213EED70040DE1B /* LaunchScreen.storyboard */; };
+		96570A9B2213EED70040DE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A9A2213EED70040DE1B /* main.m */; };
+		96570AA52213EED70040DE1B /* HXPoloHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AA42213EED70040DE1B /* HXPoloHomeTests.m */; };
+		96570AB02213EED70040DE1B /* HXPoloHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */; };
+		CA6D1527B6B85D94D0E9ED87 /* libPods-HXPoloHomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */; };
+		D5132A62961E4E9CB191018C /* libPods-HXPoloHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96570AA12213EED70040DE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96570A802213EED60040DE1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96570A872213EED60040DE1B;
+			remoteInfo = HXPoloHome;
+		};
+		96570AAC2213EED70040DE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96570A802213EED60040DE1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96570A872213EED60040DE1B;
+			remoteInfo = HXPoloHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXPoloHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXPoloHomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E88470EF65B3407E8ADCD0 /* Pods-HXPoloHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome.debug.xcconfig"; sourceTree = "<group>"; };
+		96570A882213EED60040DE1B /* HXPoloHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXPoloHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96570A8B2213EED60040DE1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96570A8C2213EED60040DE1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96570A8E2213EED60040DE1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		96570A8F2213EED60040DE1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		96570A922213EED60040DE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96570A942213EED70040DE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96570A972213EED70040DE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96570A992213EED70040DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96570A9A2213EED70040DE1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96570AA02213EED70040DE1B /* HXPoloHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXPoloHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96570AA42213EED70040DE1B /* HXPoloHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXPoloHomeTests.m; sourceTree = "<group>"; };
+		96570AA62213EED70040DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96570AAB2213EED70040DE1B /* HXPoloHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXPoloHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXPoloHomeUITests.m; sourceTree = "<group>"; };
+		96570AB12213EED70040DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeUITests/Pods-HXPoloHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDC840A1BA606F470F864966 /* Pods-HXPoloHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeUITests/Pods-HXPoloHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXPoloHomeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBA17E36AEA8F5173ACD2A0 /* Pods-HXPoloHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96570A852213EED60040DE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5132A62961E4E9CB191018C /* libPods-HXPoloHome.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570A9D2213EED70040DE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527DAACB518703A713F9EFCC /* libPods-HXPoloHomeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570AA82213EED70040DE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6D1527B6B85D94D0E9ED87 /* libPods-HXPoloHomeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C1D6D31928C17682A4AA544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83E88470EF65B3407E8ADCD0 /* Pods-HXPoloHome.debug.xcconfig */,
+				EFBA17E36AEA8F5173ACD2A0 /* Pods-HXPoloHome.release.xcconfig */,
+				BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */,
+				CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */,
+				CDC840A1BA606F470F864966 /* Pods-HXPoloHomeUITests.debug.xcconfig */,
+				BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96570A7F2213EED60040DE1B = {
+			isa = PBXGroup;
+			children = (
+				96570A8A2213EED60040DE1B /* HXPoloHome */,
+				96570AA32213EED70040DE1B /* HXPoloHomeTests */,
+				96570AAE2213EED70040DE1B /* HXPoloHomeUITests */,
+				96570A892213EED60040DE1B /* Products */,
+				7C1D6D31928C17682A4AA544 /* Pods */,
+				C5C39842BBBAC29EBE11865D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96570A892213EED60040DE1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96570A882213EED60040DE1B /* HXPoloHome.app */,
+				96570AA02213EED70040DE1B /* HXPoloHomeTests.xctest */,
+				96570AAB2213EED70040DE1B /* HXPoloHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96570A8A2213EED60040DE1B /* HXPoloHome */ = {
+			isa = PBXGroup;
+			children = (
+				96570A8B2213EED60040DE1B /* AppDelegate.h */,
+				96570A8C2213EED60040DE1B /* AppDelegate.m */,
+				96570A8E2213EED60040DE1B /* ViewController.h */,
+				96570A8F2213EED60040DE1B /* ViewController.m */,
+				96570A912213EED60040DE1B /* Main.storyboard */,
+				96570A942213EED70040DE1B /* Assets.xcassets */,
+				96570A962213EED70040DE1B /* LaunchScreen.storyboard */,
+				96570A992213EED70040DE1B /* Info.plist */,
+				96570A9A2213EED70040DE1B /* main.m */,
+			);
+			path = HXPoloHome;
+			sourceTree = "<group>";
+		};
+		96570AA32213EED70040DE1B /* HXPoloHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				96570AA42213EED70040DE1B /* HXPoloHomeTests.m */,
+				96570AA62213EED70040DE1B /* Info.plist */,
+			);
+			path = HXPoloHomeTests;
+			sourceTree = "<group>";
+		};
+		96570AAE2213EED70040DE1B /* HXPoloHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */,
+				96570AB12213EED70040DE1B /* Info.plist */,
+			);
+			path = HXPoloHomeUITests;
+			sourceTree = "<group>";
+		};
+		C5C39842BBBAC29EBE11865D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */,
+				4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */,
+				E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96570A872213EED60040DE1B /* HXPoloHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96570AB42213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHome" */;
+			buildPhases = (
+				8BCE6892027EA0B3D720B563 /* [CP] Check Pods Manifest.lock */,
+				96570A842213EED60040DE1B /* Sources */,
+				96570A852213EED60040DE1B /* Frameworks */,
+				96570A862213EED60040DE1B /* Resources */,
+				C547EFE8B8AC4CBAFE3238FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HXPoloHome;
+			productName = HXPoloHome;
+			productReference = 96570A882213EED60040DE1B /* HXPoloHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96570A9F2213EED70040DE1B /* HXPoloHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96570AB72213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHomeTests" */;
+			buildPhases = (
+				BF917335F117EA4216FD0380 /* [CP] Check Pods Manifest.lock */,
+				96570A9C2213EED70040DE1B /* Sources */,
+				96570A9D2213EED70040DE1B /* Frameworks */,
+				96570A9E2213EED70040DE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96570AA22213EED70040DE1B /* PBXTargetDependency */,
+			);
+			name = HXPoloHomeTests;
+			productName = HXPoloHomeTests;
+			productReference = 96570AA02213EED70040DE1B /* HXPoloHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96570AAA2213EED70040DE1B /* HXPoloHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96570ABA2213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHomeUITests" */;
+			buildPhases = (
+				78CD8B03EDDE5699DD03EA7F /* [CP] Check Pods Manifest.lock */,
+				96570AA72213EED70040DE1B /* Sources */,
+				96570AA82213EED70040DE1B /* Frameworks */,
+				96570AA92213EED70040DE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96570AAD2213EED70040DE1B /* PBXTargetDependency */,
+			);
+			name = HXPoloHomeUITests;
+			productName = HXPoloHomeUITests;
+			productReference = 96570AAB2213EED70040DE1B /* HXPoloHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96570A802213EED60040DE1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = huangwenheng;
+				TargetAttributes = {
+					96570A872213EED60040DE1B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					96570A9F2213EED70040DE1B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 96570A872213EED60040DE1B;
+					};
+					96570AAA2213EED70040DE1B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 96570A872213EED60040DE1B;
+					};
+				};
+			};
+			buildConfigurationList = 96570A832213EED60040DE1B /* Build configuration list for PBXProject "HXPoloHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96570A7F2213EED60040DE1B;
+			productRefGroup = 96570A892213EED60040DE1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96570A872213EED60040DE1B /* HXPoloHome */,
+				96570A9F2213EED70040DE1B /* HXPoloHomeTests */,
+				96570AAA2213EED70040DE1B /* HXPoloHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96570A862213EED60040DE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96570A982213EED70040DE1B /* LaunchScreen.storyboard in Resources */,
+				96570A952213EED70040DE1B /* Assets.xcassets in Resources */,
+				96570A932213EED60040DE1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570A9E2213EED70040DE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570AA92213EED70040DE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CD8B03EDDE5699DD03EA7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXPoloHomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCE6892027EA0B3D720B563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXPoloHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF917335F117EA4216FD0380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXPoloHomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C547EFE8B8AC4CBAFE3238FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96570A842213EED60040DE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96570A902213EED60040DE1B /* ViewController.m in Sources */,
+				96570A9B2213EED70040DE1B /* main.m in Sources */,
+				96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570A9C2213EED70040DE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96570AA52213EED70040DE1B /* HXPoloHomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96570AA72213EED70040DE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96570AB02213EED70040DE1B /* HXPoloHomeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96570AA22213EED70040DE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96570A872213EED60040DE1B /* HXPoloHome */;
+			targetProxy = 96570AA12213EED70040DE1B /* PBXContainerItemProxy */;
+		};
+		96570AAD2213EED70040DE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96570A872213EED60040DE1B /* HXPoloHome */;
+			targetProxy = 96570AAC2213EED70040DE1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96570A912213EED60040DE1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96570A922213EED60040DE1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96570A962213EED70040DE1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96570A972213EED70040DE1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96570AB22213EED70040DE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96570AB32213EED70040DE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96570AB52213EED70040DE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E88470EF65B3407E8ADCD0 /* Pods-HXPoloHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96570AB62213EED70040DE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBA17E36AEA8F5173ACD2A0 /* Pods-HXPoloHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96570AB82213EED70040DE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXPoloHome.app/HXPoloHome";
+			};
+			name = Debug;
+		};
+		96570AB92213EED70040DE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXPoloHome.app/HXPoloHome";
+			};
+			name = Release;
+		};
+		96570ABB2213EED70040DE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC840A1BA606F470F864966 /* Pods-HXPoloHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HXPoloHome;
+			};
+			name = Debug;
+		};
+		96570ABC2213EED70040DE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY4PSG2M6R;
+				INFOPLIST_FILE = HXPoloHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwkj.HXPoloHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HXPoloHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96570A832213EED60040DE1B /* Build configuration list for PBXProject "HXPoloHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96570AB22213EED70040DE1B /* Debug */,
+				96570AB32213EED70040DE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96570AB42213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96570AB52213EED70040DE1B /* Debug */,
+				96570AB62213EED70040DE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96570AB72213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96570AB82213EED70040DE1B /* Debug */,
+				96570AB92213EED70040DE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96570ABA2213EED70040DE1B /* Build configuration list for PBXNativeTarget "HXPoloHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96570ABB2213EED70040DE1B /* Debug */,
+				96570ABC2213EED70040DE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96570A802213EED60040DE1B /* Project object */;
+}
