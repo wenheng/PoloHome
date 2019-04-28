@@ -17,6 +17,19 @@
 		96570AA52213EED70040DE1B /* HXPoloHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AA42213EED70040DE1B /* HXPoloHomeTests.m */; };
 		96570AB02213EED70040DE1B /* HXPoloHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570AAF2213EED70040DE1B /* HXPoloHomeUITests.m */; };
 		96570AC02213FBC40040DE1B /* HXConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570ABF2213FBC40040DE1B /* HXConsts.m */; };
+		96AB2C822275438300470719 /* HXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C812275438300470719 /* HXView.m */; };
+		96AB2C852275439700470719 /* HXBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C842275439700470719 /* HXBaseController.m */; };
+		96AB2C88227543A100470719 /* HXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C87227543A100470719 /* HXModel.m */; };
+		96AB2C8F227543CF00470719 /* HXLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C8E227543CF00470719 /* HXLoginModel.m */; };
+		96AB2C92227543DA00470719 /* HXLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C91227543DA00470719 /* HXLoginView.m */; };
+		96AB2C95227543E700470719 /* HXLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C94227543E700470719 /* HXLoginController.m */; };
+		96AB2C992275443200470719 /* HXDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C982275443200470719 /* HXDataCenter.m */; };
+		96AB2C9E2275445900470719 /* HXWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C9D2275445900470719 /* HXWebController.m */; };
+		96AB2CA22275447300470719 /* HXLogCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CA12275447300470719 /* HXLogCenter.m */; };
+		96AB2CA62275448D00470719 /* HXCrashCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CA52275448D00470719 /* HXCrashCenter.m */; };
+		96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CA9227544B400470719 /* HXNetworkCenter.m */; };
+		96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CAD227544CE00470719 /* HXMonitorCenter.m */; };
+		96AB2CB22275450100470719 /* HXAppLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB12275450100470719 /* HXAppLifeCycle.m */; };
 		96E501342214314A004ECEAB /* NSString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E501332214314A004ECEAB /* NSString+HX.m */; };
 		96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013622143164004ECEAB /* NSMutableString+HX.m */; };
 		96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013922144D48004ECEAB /* NSArray+HX.m */; };
@@ -72,6 +85,32 @@
 		96570ABF2213FBC40040DE1B /* HXConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXConsts.m; sourceTree = "<group>"; };
 		96570AC22213FBF00040DE1B /* HXPoloHomePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXPoloHomePch.pch; sourceTree = "<group>"; };
 		96570AC32213FCCB0040DE1B /* HXMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMacros.h; sourceTree = "<group>"; };
+		96AB2C802275438300470719 /* HXView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXView.h; sourceTree = "<group>"; };
+		96AB2C812275438300470719 /* HXView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXView.m; sourceTree = "<group>"; };
+		96AB2C832275439700470719 /* HXBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXBaseController.h; sourceTree = "<group>"; };
+		96AB2C842275439700470719 /* HXBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXBaseController.m; sourceTree = "<group>"; };
+		96AB2C86227543A100470719 /* HXModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXModel.h; sourceTree = "<group>"; };
+		96AB2C87227543A100470719 /* HXModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXModel.m; sourceTree = "<group>"; };
+		96AB2C8D227543CF00470719 /* HXLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXLoginModel.h; sourceTree = "<group>"; };
+		96AB2C8E227543CF00470719 /* HXLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXLoginModel.m; sourceTree = "<group>"; };
+		96AB2C90227543DA00470719 /* HXLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXLoginView.h; sourceTree = "<group>"; };
+		96AB2C91227543DA00470719 /* HXLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXLoginView.m; sourceTree = "<group>"; };
+		96AB2C93227543E700470719 /* HXLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXLoginController.h; sourceTree = "<group>"; };
+		96AB2C94227543E700470719 /* HXLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXLoginController.m; sourceTree = "<group>"; };
+		96AB2C972275443200470719 /* HXDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXDataCenter.h; sourceTree = "<group>"; };
+		96AB2C982275443200470719 /* HXDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXDataCenter.m; sourceTree = "<group>"; };
+		96AB2C9C2275445900470719 /* HXWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXWebController.h; sourceTree = "<group>"; };
+		96AB2C9D2275445900470719 /* HXWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXWebController.m; sourceTree = "<group>"; };
+		96AB2CA02275447300470719 /* HXLogCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXLogCenter.h; sourceTree = "<group>"; };
+		96AB2CA12275447300470719 /* HXLogCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXLogCenter.m; sourceTree = "<group>"; };
+		96AB2CA42275448D00470719 /* HXCrashCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCrashCenter.h; sourceTree = "<group>"; };
+		96AB2CA52275448D00470719 /* HXCrashCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCrashCenter.m; sourceTree = "<group>"; };
+		96AB2CA8227544B400470719 /* HXNetworkCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNetworkCenter.h; sourceTree = "<group>"; };
+		96AB2CA9227544B400470719 /* HXNetworkCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNetworkCenter.m; sourceTree = "<group>"; };
+		96AB2CAC227544CE00470719 /* HXMonitorCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMonitorCenter.h; sourceTree = "<group>"; };
+		96AB2CAD227544CE00470719 /* HXMonitorCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMonitorCenter.m; sourceTree = "<group>"; };
+		96AB2CB02275450100470719 /* HXAppLifeCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAppLifeCycle.h; sourceTree = "<group>"; };
+		96AB2CB12275450100470719 /* HXAppLifeCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAppLifeCycle.m; sourceTree = "<group>"; };
 		96E501322214314A004ECEAB /* NSString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HX.h"; sourceTree = "<group>"; };
 		96E501332214314A004ECEAB /* NSString+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HX.m"; sourceTree = "<group>"; };
 		96E5013522143164004ECEAB /* NSMutableString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HX.h"; sourceTree = "<group>"; };
@@ -166,15 +205,15 @@
 		96570A8A2213EED60040DE1B /* HXPoloHome */ = {
 			isa = PBXGroup;
 			children = (
-				96E5012422142FC0004ECEAB /* Modules */,
+				96AB2CAF227544DE00470719 /* HXAppLifeCycleModule */,
+				96AB2CAB227544BE00470719 /* HXMonitorModule */,
+				96AB2CA72275449500470719 /* HXNetworkModule */,
+				96AB2CA32275447D00470719 /* HXCrashModule */,
+				96AB2C9F2275446100470719 /* HXLogModule */,
+				96AB2C9A2275443C00470719 /* HXWebViewModule */,
+				96AB2C962275441800470719 /* HXDataModule */,
+				96AB2C7B2275434600470719 /* Module */,
 				96E5012322142FB1004ECEAB /* HXKit */,
-				96E5012222142F9A004ECEAB /* HXDataManager */,
-				96E5012122142F92004ECEAB /* HXWebView */,
-				96E5012022142F88004ECEAB /* HXLogManager */,
-				96E5011F22142F7A004ECEAB /* HXCrashManager */,
-				96E5011E22142F71004ECEAB /* HXNetworking */,
-				96E5011D22142E86004ECEAB /* HXAppManager */,
-				96E5011C22142E3B004ECEAB /* HXMonitor */,
 				96570AC12213FBD10040DE1B /* HXMacros */,
 				96570ABD2213FBA30040DE1B /* HXConst */,
 				96570A8B2213EED60040DE1B /* AppDelegate.h */,
@@ -226,169 +265,11 @@
 			path = HXMacros;
 			sourceTree = "<group>";
 		};
-		96E5011C22142E3B004ECEAB /* HXMonitor */ = {
+		96AB2C782275426400470719 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = HXMonitor;
-			sourceTree = "<group>";
-		};
-		96E5011D22142E86004ECEAB /* HXAppManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXAppManager;
-			sourceTree = "<group>";
-		};
-		96E5011E22142F71004ECEAB /* HXNetworking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXNetworking;
-			sourceTree = "<group>";
-		};
-		96E5011F22142F7A004ECEAB /* HXCrashManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXCrashManager;
-			sourceTree = "<group>";
-		};
-		96E5012022142F88004ECEAB /* HXLogManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXLogManager;
-			sourceTree = "<group>";
-		};
-		96E5012122142F92004ECEAB /* HXWebView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXWebView;
-			sourceTree = "<group>";
-		};
-		96E5012222142F9A004ECEAB /* HXDataManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXDataManager;
-			sourceTree = "<group>";
-		};
-		96E5012322142FB1004ECEAB /* HXKit */ = {
-			isa = PBXGroup;
-			children = (
-				96E50131221430B0004ECEAB /* Category */,
-				96E50130221430A1004ECEAB /* HXFoundation */,
-				96E5012F22143098004ECEAB /* HXUI */,
-			);
-			path = HXKit;
-			sourceTree = "<group>";
-		};
-		96E5012422142FC0004ECEAB /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				96E5012E2214304F004ECEAB /* Mall */,
-				96E5012D22143010004ECEAB /* Discover */,
-				96E5012C2214300B004ECEAB /* Me */,
-				96E5012B22142FFD004ECEAB /* HXRouter */,
-				96E5012A22142FF4004ECEAB /* Base */,
-				96E5012922142FE6004ECEAB /* AdLaunch */,
-				96E5012822142FDD004ECEAB /* NewFeature */,
-				96E5012722142FD6004ECEAB /* Register */,
-				96E5012622142FD0004ECEAB /* Login */,
-				96E5012522142FCC004ECEAB /* Home */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		96E5012522142FCC004ECEAB /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		96E5012622142FD0004ECEAB /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		96E5012722142FD6004ECEAB /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		96E5012822142FDD004ECEAB /* NewFeature */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewFeature;
-			sourceTree = "<group>";
-		};
-		96E5012922142FE6004ECEAB /* AdLaunch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AdLaunch;
-			sourceTree = "<group>";
-		};
-		96E5012A22142FF4004ECEAB /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		96E5012B22142FFD004ECEAB /* HXRouter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXRouter;
-			sourceTree = "<group>";
-		};
-		96E5012C2214300B004ECEAB /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Me;
-			sourceTree = "<group>";
-		};
-		96E5012D22143010004ECEAB /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		96E5012E2214304F004ECEAB /* Mall */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mall;
-			sourceTree = "<group>";
-		};
-		96E5012F22143098004ECEAB /* HXUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXUI;
-			sourceTree = "<group>";
-		};
-		96E50130221430A1004ECEAB /* HXFoundation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HXFoundation;
-			sourceTree = "<group>";
-		};
-		96E50131221430B0004ECEAB /* Category */ = {
-			isa = PBXGroup;
-			children = (
+				96E5014D22144E64004ECEAB /* NSDate+HX.h */,
+				96E5014E22144E64004ECEAB /* NSDate+HX.m */,
 				96E501322214314A004ECEAB /* NSString+HX.h */,
 				96E501332214314A004ECEAB /* NSString+HX.m */,
 				96E5013522143164004ECEAB /* NSMutableString+HX.h */,
@@ -405,10 +286,186 @@
 				96E5014522144D82004ECEAB /* NSData+HX.m */,
 				96E5014722144D8D004ECEAB /* NSMutableData+HX.h */,
 				96E5014822144D8D004ECEAB /* NSMutableData+HX.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		96AB2C792275427E00470719 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
 				96E5014A22144D98004ECEAB /* UIColor+HX.h */,
 				96E5014B22144D98004ECEAB /* UIColor+HX.m */,
-				96E5014D22144E64004ECEAB /* NSDate+HX.h */,
-				96E5014E22144E64004ECEAB /* NSDate+HX.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		96AB2C7B2275434600470719 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C89227543AA00470719 /* Login */,
+				96AB2C7C2275435600470719 /* Base */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		96AB2C7C2275435600470719 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C7F2275436F00470719 /* Model */,
+				96AB2C7E2275436A00470719 /* View */,
+				96AB2C7D2275436200470719 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		96AB2C7D2275436200470719 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C832275439700470719 /* HXBaseController.h */,
+				96AB2C842275439700470719 /* HXBaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AB2C7E2275436A00470719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C802275438300470719 /* HXView.h */,
+				96AB2C812275438300470719 /* HXView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AB2C7F2275436F00470719 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C86227543A100470719 /* HXModel.h */,
+				96AB2C87227543A100470719 /* HXModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AB2C89227543AA00470719 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C8C227543C200470719 /* Model */,
+				96AB2C8B227543B800470719 /* View */,
+				96AB2C8A227543B100470719 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		96AB2C8A227543B100470719 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C93227543E700470719 /* HXLoginController.h */,
+				96AB2C94227543E700470719 /* HXLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AB2C8B227543B800470719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C90227543DA00470719 /* HXLoginView.h */,
+				96AB2C91227543DA00470719 /* HXLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AB2C8C227543C200470719 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C8D227543CF00470719 /* HXLoginModel.h */,
+				96AB2C8E227543CF00470719 /* HXLoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AB2C962275441800470719 /* HXDataModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C972275443200470719 /* HXDataCenter.h */,
+				96AB2C982275443200470719 /* HXDataCenter.m */,
+			);
+			path = HXDataModule;
+			sourceTree = "<group>";
+		};
+		96AB2C9A2275443C00470719 /* HXWebViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C9B2275444700470719 /* Controller */,
+			);
+			path = HXWebViewModule;
+			sourceTree = "<group>";
+		};
+		96AB2C9B2275444700470719 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C9C2275445900470719 /* HXWebController.h */,
+				96AB2C9D2275445900470719 /* HXWebController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AB2C9F2275446100470719 /* HXLogModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CA02275447300470719 /* HXLogCenter.h */,
+				96AB2CA12275447300470719 /* HXLogCenter.m */,
+			);
+			path = HXLogModule;
+			sourceTree = "<group>";
+		};
+		96AB2CA32275447D00470719 /* HXCrashModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CA42275448D00470719 /* HXCrashCenter.h */,
+				96AB2CA52275448D00470719 /* HXCrashCenter.m */,
+			);
+			path = HXCrashModule;
+			sourceTree = "<group>";
+		};
+		96AB2CA72275449500470719 /* HXNetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CA8227544B400470719 /* HXNetworkCenter.h */,
+				96AB2CA9227544B400470719 /* HXNetworkCenter.m */,
+			);
+			path = HXNetworkModule;
+			sourceTree = "<group>";
+		};
+		96AB2CAB227544BE00470719 /* HXMonitorModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CAC227544CE00470719 /* HXMonitorCenter.h */,
+				96AB2CAD227544CE00470719 /* HXMonitorCenter.m */,
+			);
+			path = HXMonitorModule;
+			sourceTree = "<group>";
+		};
+		96AB2CAF227544DE00470719 /* HXAppLifeCycleModule */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CB02275450100470719 /* HXAppLifeCycle.h */,
+				96AB2CB12275450100470719 /* HXAppLifeCycle.m */,
+			);
+			path = HXAppLifeCycleModule;
+			sourceTree = "<group>";
+		};
+		96E5012322142FB1004ECEAB /* HXKit */ = {
+			isa = PBXGroup;
+			children = (
+				96E50131221430B0004ECEAB /* Category */,
+			);
+			path = HXKit;
+			sourceTree = "<group>";
+		};
+		96E50131221430B0004ECEAB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2C792275427E00470719 /* UIKit */,
+				96AB2C782275426400470719 /* Foundation */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -633,20 +690,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AB2CB22275450100470719 /* HXAppLifeCycle.m in Sources */,
+				96AB2C9E2275445900470719 /* HXWebController.m in Sources */,
 				96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */,
 				96E5014922144D8D004ECEAB /* NSMutableData+HX.m in Sources */,
+				96AB2C92227543DA00470719 /* HXLoginView.m in Sources */,
 				96E5014322144D77004ECEAB /* NSMutableDictionary+HX.m in Sources */,
+				96AB2C8F227543CF00470719 /* HXLoginModel.m in Sources */,
+				96AB2C88227543A100470719 /* HXModel.m in Sources */,
 				96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */,
+				96AB2C95227543E700470719 /* HXLoginController.m in Sources */,
 				96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */,
 				96570A902213EED60040DE1B /* ViewController.m in Sources */,
 				96E5013D22144D50004ECEAB /* NSMutableArray+HX.m in Sources */,
+				96AB2CA62275448D00470719 /* HXCrashCenter.m in Sources */,
+				96AB2C992275443200470719 /* HXDataCenter.m in Sources */,
 				96570A9B2213EED70040DE1B /* main.m in Sources */,
+				96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */,
 				96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
 				96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */,
 				96E5014022144D59004ECEAB /* NSDictionary+HX.m in Sources */,
+				96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */,
+				96AB2C852275439700470719 /* HXBaseController.m in Sources */,
 				96570AC02213FBC40040DE1B /* HXConsts.m in Sources */,
+				96AB2CA22275447300470719 /* HXLogCenter.m in Sources */,
 				96E501342214314A004ECEAB /* NSString+HX.m in Sources */,
+				96AB2C822275438300470719 /* HXView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

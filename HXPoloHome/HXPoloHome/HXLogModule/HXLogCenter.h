@@ -1,8 +1,8 @@
 //
-//  NSDate+HX.h
+//  HXLogCenter.h
 //  HXPoloHome
 //
-//  Created by huangwenheng on 2019/2/13.
+//  Created by huangwenheng on 2019/4/28.
 //  Copyright © 2019年 huangwenheng. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDate (HX)
+@interface HXLogCenter : NSObject
 
 @end
 
