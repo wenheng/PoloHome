@@ -30,6 +30,12 @@
 		96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CA9227544B400470719 /* HXNetworkCenter.m */; };
 		96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CAD227544CE00470719 /* HXMonitorCenter.m */; };
 		96AB2CB22275450100470719 /* HXAppLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB12275450100470719 /* HXAppLifeCycle.m */; };
+		96AB2CB7227545CE00470719 /* HXNavigationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB6227545CE00470719 /* HXNavigationConfig.m */; };
+		96AB2CBA227546E800470719 /* NSObject+HXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */; };
+		96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */; };
+		96AB2CC02275527C00470719 /* UINavigationBar+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */; };
+		96AB2CC3227553F400470719 /* UIViewController+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */; };
+		96AB2CC62275556400470719 /* UINavigationItem+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */; };
 		96E501342214314A004ECEAB /* NSString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E501332214314A004ECEAB /* NSString+HX.m */; };
 		96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013622143164004ECEAB /* NSMutableString+HX.m */; };
 		96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013922144D48004ECEAB /* NSArray+HX.m */; };
@@ -111,6 +117,18 @@
 		96AB2CAD227544CE00470719 /* HXMonitorCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMonitorCenter.m; sourceTree = "<group>"; };
 		96AB2CB02275450100470719 /* HXAppLifeCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAppLifeCycle.h; sourceTree = "<group>"; };
 		96AB2CB12275450100470719 /* HXAppLifeCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAppLifeCycle.m; sourceTree = "<group>"; };
+		96AB2CB5227545CE00470719 /* HXNavigationConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNavigationConfig.h; sourceTree = "<group>"; };
+		96AB2CB6227545CE00470719 /* HXNavigationConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNavigationConfig.m; sourceTree = "<group>"; };
+		96AB2CB8227546E800470719 /* NSObject+HXRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HXRuntime.h"; sourceTree = "<group>"; };
+		96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXRuntime.m"; sourceTree = "<group>"; };
+		96AB2CBB22754DF100470719 /* UIBarButtonItem+HXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HXCreate.h"; sourceTree = "<group>"; };
+		96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HXCreate.m"; sourceTree = "<group>"; };
+		96AB2CBE2275527C00470719 /* UINavigationBar+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HXFixSpace.h"; sourceTree = "<group>"; };
+		96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HXFixSpace.m"; sourceTree = "<group>"; };
+		96AB2CC1227553F400470719 /* UIViewController+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HXFixSpace.h"; sourceTree = "<group>"; };
+		96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HXFixSpace.m"; sourceTree = "<group>"; };
+		96AB2CC42275556400470719 /* UINavigationItem+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+HXFixSpace.h"; sourceTree = "<group>"; };
+		96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+HXFixSpace.m"; sourceTree = "<group>"; };
 		96E501322214314A004ECEAB /* NSString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HX.h"; sourceTree = "<group>"; };
 		96E501332214314A004ECEAB /* NSString+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HX.m"; sourceTree = "<group>"; };
 		96E5013522143164004ECEAB /* NSMutableString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HX.h"; sourceTree = "<group>"; };
@@ -205,6 +223,7 @@
 		96570A8A2213EED60040DE1B /* HXPoloHome */ = {
 			isa = PBXGroup;
 			children = (
+				96AB2CB32275455A00470719 /* HXThirdLib */,
 				96AB2CAF227544DE00470719 /* HXAppLifeCycleModule */,
 				96AB2CAB227544BE00470719 /* HXMonitorModule */,
 				96AB2CA72275449500470719 /* HXNetworkModule */,
@@ -453,6 +472,33 @@
 			path = HXAppLifeCycleModule;
 			sourceTree = "<group>";
 		};
+		96AB2CB32275455A00470719 /* HXThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CB42275457C00470719 /* UINavigationBarLayout */,
+			);
+			path = HXThirdLib;
+			sourceTree = "<group>";
+		};
+		96AB2CB42275457C00470719 /* UINavigationBarLayout */ = {
+			isa = PBXGroup;
+			children = (
+				96AB2CB5227545CE00470719 /* HXNavigationConfig.h */,
+				96AB2CB6227545CE00470719 /* HXNavigationConfig.m */,
+				96AB2CB8227546E800470719 /* NSObject+HXRuntime.h */,
+				96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */,
+				96AB2CBB22754DF100470719 /* UIBarButtonItem+HXCreate.h */,
+				96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */,
+				96AB2CBE2275527C00470719 /* UINavigationBar+HXFixSpace.h */,
+				96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */,
+				96AB2CC1227553F400470719 /* UIViewController+HXFixSpace.h */,
+				96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */,
+				96AB2CC42275556400470719 /* UINavigationItem+HXFixSpace.h */,
+				96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */,
+			);
+			path = UINavigationBarLayout;
+			sourceTree = "<group>";
+		};
 		96E5012322142FB1004ECEAB /* HXKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -699,15 +745,21 @@
 				96AB2C8F227543CF00470719 /* HXLoginModel.m in Sources */,
 				96AB2C88227543A100470719 /* HXModel.m in Sources */,
 				96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */,
+				96AB2CB7227545CE00470719 /* HXNavigationConfig.m in Sources */,
 				96AB2C95227543E700470719 /* HXLoginController.m in Sources */,
 				96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */,
+				96AB2CBA227546E800470719 /* NSObject+HXRuntime.m in Sources */,
+				96AB2CC62275556400470719 /* UINavigationItem+HXFixSpace.m in Sources */,
 				96570A902213EED60040DE1B /* ViewController.m in Sources */,
 				96E5013D22144D50004ECEAB /* NSMutableArray+HX.m in Sources */,
 				96AB2CA62275448D00470719 /* HXCrashCenter.m in Sources */,
 				96AB2C992275443200470719 /* HXDataCenter.m in Sources */,
 				96570A9B2213EED70040DE1B /* main.m in Sources */,
 				96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */,
+				96AB2CC3227553F400470719 /* UIViewController+HXFixSpace.m in Sources */,
+				96AB2CC02275527C00470719 /* UINavigationBar+HXFixSpace.m in Sources */,
 				96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */,
+				96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
 				96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */,
 				96E5014022144D59004ECEAB /* NSDictionary+HX.m in Sources */,
