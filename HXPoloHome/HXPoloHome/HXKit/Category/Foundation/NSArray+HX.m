@@ -10,4 +10,16 @@
 
 @implementation NSArray (HX)
 
+- (NSArray *)hx_removeSameElement
+{
+  NSMutableOrderedSet *set = [NSMutableOrderedSet orderedSetWithArray:self];
+  return [set array];
+}
+
+- (NSArray *)hx_reversedArray
+{
+  NSArray *reversedArray = [[self reverseObjectEnumerator] allObjects];
+  return reversedArray;
+}
+
 @end

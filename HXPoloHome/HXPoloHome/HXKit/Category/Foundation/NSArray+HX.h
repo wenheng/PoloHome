@@ -11,5 +11,12 @@
 
 @interface NSArray (HX)
 
+/** 数组去重 */
+- (NSArray *)hx_removeSameElement;
+/** 数组倒序 */
+- (NSArray *)hx_reversedArray;
+
+
+
 @end
 

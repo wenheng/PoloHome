@@ -528,7 +528,7 @@ static const unsigned componentFlags = (NSCalendarUnitEra| NSCalendarUnitYear | 
   if (components1.weekOfMonth != components2.weekOfMonth) {
     return NO;
   }
-  return (abs([self timeIntervalSinceDate:aDate])) < kDateWeek;
+  return (fabs([self timeIntervalSinceDate:aDate])) < kDateWeek;
 }
 
 - (BOOL)isThisWeek

@@ -15,7 +15,7 @@
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
-#define UMELog(fmt, ...) NSLog((@"\n函数:%s""\n""行数:%d" "\n" "内容:" fmt) , __FUNCTION__, __LINE__, ##__VA_ARGS__); //带函数名和行数
+#define HXLog(fmt, ...) NSLog((@"\n函数:%s""\n""行数:%d" "\n" "内容:" fmt) , __FUNCTION__, __LINE__, ##__VA_ARGS__); //带函数名和行数
 
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelError;
