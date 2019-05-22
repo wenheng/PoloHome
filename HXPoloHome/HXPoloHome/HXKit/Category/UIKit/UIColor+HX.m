@@ -49,10 +49,10 @@
 
 + (UIColor *)colorWithHex:(UInt32)hex alpha:(CGFloat)alpha
 {
-    return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
-                           green:((hex >> 8) & 0xFF)/255.0
-                            blue:(hex & 0xFF)/255.0
-                           alpha:alpha];
+  return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
+                         green:((hex >> 8) & 0xFF)/255.0
+                          blue:(hex & 0xFF)/255.0
+                         alpha:alpha];
 }
 
 + (UIColor *)colorWithHexString:(NSString *)hexString
@@ -110,19 +110,6 @@
     return [NSString stringWithFormat:@"#%02X%02X%02X", (int)((CGColorGetComponents(color.CGColor))[0]*255.0),
             (int)((CGColorGetComponents(color.CGColor))[1]*255.0),
             (int)((CGColorGetComponents(color.CGColor))[2]*255.0)];
-}
-
-+ (UIColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha
-{
-    return [UIColor colorWithRed:red/255.f
-                           green:green/255.f
-                            blue:blue/255.f
-                           alpha:alpha];
-}
-
-+ (UIColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
-{
-    return [self colorWithRed:red green:green blue:blue alpha:1.0f];
 }
 
 CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length)

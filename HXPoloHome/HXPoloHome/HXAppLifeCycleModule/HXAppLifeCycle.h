@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface HXAppLifeCycle : NSObject
 
++ (instancetype)sharedInstance;
+
+- (void)configAppModule;
+
+
 @end
 
-NS_ASSUME_NONNULL_END
