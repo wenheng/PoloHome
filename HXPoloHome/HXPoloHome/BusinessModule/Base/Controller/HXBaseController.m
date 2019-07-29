@@ -25,15 +25,15 @@
 #pragma mark - Public Method
 - (void)push:(NSInteger)pageId
 {
-  
+  [[HXRouterManager sharedInstance] push:pageId];
 }
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params
 {
-  
+  [[HXRouterManager sharedInstance] push:pageId params:params];
 }
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(nonnull id)delegate
 {
-  
+  [[HXRouterManager sharedInstance] push:pageId params:params delegate:delegate];
 }
 
 @end

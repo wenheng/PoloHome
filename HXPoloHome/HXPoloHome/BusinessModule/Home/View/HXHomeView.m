@@ -32,7 +32,7 @@
 {
   self.backgroundColor = [UIColor orangeColor];
   [self addSubview:self.titleLabel];
-  self.titleLabel.frame = CGRectMake(0, 0, 100, 200);
+  self.titleLabel.frame = CGRectMake(0, 0, HXLen(100), HXLen(200));
 }
 
 #pragma mark -

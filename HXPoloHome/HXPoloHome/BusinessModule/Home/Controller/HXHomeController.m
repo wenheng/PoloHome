@@ -43,7 +43,7 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-  [self testArray];
+  
 }
 
 - (void)testArray

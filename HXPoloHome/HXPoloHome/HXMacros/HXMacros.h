@@ -66,7 +66,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 #pragma mark - 适配
 //设计基准尺寸 375 * 667
 //适配长度
-#define HXLen(lenght)  (kIPHONEWIDTH != 375 ? (width)*kIPHONEWIDTH/375 : (lenght))
+#define HXLen(lenght)  (kIPHONEWIDTH != 375 ? (lenght)*kIPHONEWIDTH/375 : (lenght))
 //适配字体大小
 #define HXFont(font) (kIPHONEWIDTH != 375 ? floor((font)*kIPHONEWIDTH / 375) : (font))
 

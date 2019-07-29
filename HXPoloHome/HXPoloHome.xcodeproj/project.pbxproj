@@ -68,6 +68,7 @@
 		96E554B622EF4F750025C88C /* HXHomeBisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554B522EF4F750025C88C /* HXHomeBisModel.m */; };
 		96E554BC22EF4FE20025C88C /* HXApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554BB22EF4FE20025C88C /* HXApi.m */; };
 		96E554BF22EF4FFA0025C88C /* HXHomeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554BE22EF4FFA0025C88C /* HXHomeApi.m */; };
+		96E554C222EF53620025C88C /* HXRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554C122EF53620025C88C /* HXRouterManager.m */; };
 		CA6D1527B6B85D94D0E9ED87 /* libPods-HXPoloHomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */; };
 		D5132A62961E4E9CB191018C /* libPods-HXPoloHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */; };
 /* End PBXBuildFile section */
@@ -217,6 +218,8 @@
 		96E554BB22EF4FE20025C88C /* HXApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXApi.m; sourceTree = "<group>"; };
 		96E554BD22EF4FFA0025C88C /* HXHomeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeApi.h; sourceTree = "<group>"; };
 		96E554BE22EF4FFA0025C88C /* HXHomeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeApi.m; sourceTree = "<group>"; };
+		96E554C022EF53620025C88C /* HXRouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXRouterManager.h; sourceTree = "<group>"; };
+		96E554C122EF53620025C88C /* HXRouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXRouterManager.m; sourceTree = "<group>"; };
 		BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeUITests/Pods-HXPoloHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -790,6 +793,8 @@
 			children = (
 				96E554AC22EF4E320025C88C /* HXRouterConfig.h */,
 				96E554AD22EF4E320025C88C /* HXRouterConfig.m */,
+				96E554C022EF53620025C88C /* HXRouterManager.h */,
+				96E554C122EF53620025C88C /* HXRouterManager.m */,
 			);
 			path = HXRouterModule;
 			sourceTree = "<group>";
@@ -1090,6 +1095,7 @@
 				96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
 				966861642295120D00081C47 /* HXNavigationController.m in Sources */,
+				96E554C222EF53620025C88C /* HXRouterManager.m in Sources */,
 				96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */,
 				96E554BF22EF4FFA0025C88C /* HXHomeApi.m in Sources */,
 				96E5014022144D59004ECEAB /* NSDictionary+HX.m in Sources */,
