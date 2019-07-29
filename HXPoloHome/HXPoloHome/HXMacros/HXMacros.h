@@ -14,9 +14,7 @@
 
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
-
 #define HXLog(fmt, ...) NSLog((@"\n函数:%s""\n""行数:%d" "\n" "内容:" fmt) , __FUNCTION__, __LINE__, ##__VA_ARGS__); //带函数名和行数
-
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelError;
 #define HXLog(fmt, ...)
@@ -25,7 +23,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 
 
 #pragma mark -
-#pragma mark - 设备
+#pragma mark - 设备类型
 /** 判断是否是iPad */
 #define IS_IPAD ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 /** 判断是否是iPhone4系列 */
@@ -47,32 +45,30 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 #define IS_IPHONE_X_Series [UIScreen mainScreen].bounds.size.height >= 812.0
 
 #pragma mark -
-#pragma mark - UI宏
+#pragma mark - 导航栏
 //状态栏
-#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kSTATUSBARHEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //导航栏
-#define kNavigationBarHeight 44.0
+#define kNAVIGATIONBARHEIGHT 44.0
 //顶部高度 = 状态栏 + 导航栏
-#define kTopHeight (kStatusBarHeight + kNavigationBarHeight)
+#define kTOPNAVIGATIONHEIGHT (kSTATUSBARHEIGHT + kNAVIGATIONBARHEIGHT)
 //tabbar高度
-#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height > 20.1 ? 83.0 : 49.0)
+#define kTABARHEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height > 20.1 ? 83.0 : 49.0)
 //底部圆弧（全面屏系列专有）
-#define kTabBarArcHeight ([[UIApplication sharedApplication] statusBarFrame].size.height > 20.1 ? 34.0 : 0.0)
+#define kTABBARARCHEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height > 20.1 ? 34.0 : 0.0)
 
 //iPhone的宽度
-#define kIPHONE_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define kIPHONEWIDTH [[UIScreen mainScreen] bounds].size.width
 //iPhone的高度
-#define kIPHONE_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define kIPHONEHEIGHT [[UIScreen mainScreen] bounds].size.height
 
 #pragma mark -
 #pragma mark - 适配
 //设计基准尺寸 375 * 667
-//适配宽度
-#define HXWidth(width)  (kIPHONE_WIDTH != 375 ? (width)*kIPHONE_WIDTH/375 : (width))
-//适配高度
-#define HXHeight(height) (kIPHONE_WIDTH != 375 ? (height)*kIPHONE_WIDTH/375 : (height))
+//适配长度
+#define HXLen(lenght)  (kIPHONEWIDTH != 375 ? (width)*kIPHONEWIDTH/375 : (lenght))
 //适配字体大小
-#define HXFont(font) (kIPHONE_WIDTH != 375 ? floor((font)*kIPHONE_WIDTH / 375) : (font))
+#define HXFont(font) (kIPHONEWIDTH != 375 ? floor((font)*kIPHONEWIDTH / 375) : (font))
 
 
 

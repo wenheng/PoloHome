@@ -10,8 +10,6 @@
 #import "HXNavigationBar.h"
 #import "UIViewController+HXNaviBar.h"
 
-
-
 @interface HXNavigationController : UINavigationController
 
 - (void)updateNavigationBarForViewController:(UIViewController *)viewController;

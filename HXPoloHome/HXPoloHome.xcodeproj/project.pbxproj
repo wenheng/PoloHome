@@ -63,6 +63,11 @@
 		96E5014922144D8D004ECEAB /* NSMutableData+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014822144D8D004ECEAB /* NSMutableData+HX.m */; };
 		96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014B22144D98004ECEAB /* UIColor+HX.m */; };
 		96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014E22144E64004ECEAB /* NSDate+HX.m */; };
+		96E554AE22EF4E320025C88C /* HXRouterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554AD22EF4E320025C88C /* HXRouterConfig.m */; };
+		96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554B222EF4F320025C88C /* HXBusinessModel.m */; };
+		96E554B622EF4F750025C88C /* HXHomeBisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554B522EF4F750025C88C /* HXHomeBisModel.m */; };
+		96E554BC22EF4FE20025C88C /* HXApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554BB22EF4FE20025C88C /* HXApi.m */; };
+		96E554BF22EF4FFA0025C88C /* HXHomeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554BE22EF4FFA0025C88C /* HXHomeApi.m */; };
 		CA6D1527B6B85D94D0E9ED87 /* libPods-HXPoloHomeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4689338A1BC5B499E70E18D /* libPods-HXPoloHomeUITests.a */; };
 		D5132A62961E4E9CB191018C /* libPods-HXPoloHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */; };
 /* End PBXBuildFile section */
@@ -202,6 +207,16 @@
 		96E5014B22144D98004ECEAB /* UIColor+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HX.m"; sourceTree = "<group>"; };
 		96E5014D22144E64004ECEAB /* NSDate+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+HX.h"; sourceTree = "<group>"; };
 		96E5014E22144E64004ECEAB /* NSDate+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HX.m"; sourceTree = "<group>"; };
+		96E554AC22EF4E320025C88C /* HXRouterConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXRouterConfig.h; sourceTree = "<group>"; };
+		96E554AD22EF4E320025C88C /* HXRouterConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXRouterConfig.m; sourceTree = "<group>"; };
+		96E554B122EF4F320025C88C /* HXBusinessModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXBusinessModel.h; sourceTree = "<group>"; };
+		96E554B222EF4F320025C88C /* HXBusinessModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXBusinessModel.m; sourceTree = "<group>"; };
+		96E554B422EF4F750025C88C /* HXHomeBisModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeBisModel.h; sourceTree = "<group>"; };
+		96E554B522EF4F750025C88C /* HXHomeBisModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeBisModel.m; sourceTree = "<group>"; };
+		96E554BA22EF4FE20025C88C /* HXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXApi.h; sourceTree = "<group>"; };
+		96E554BB22EF4FE20025C88C /* HXApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXApi.m; sourceTree = "<group>"; };
+		96E554BD22EF4FFA0025C88C /* HXHomeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeApi.h; sourceTree = "<group>"; };
+		96E554BE22EF4FFA0025C88C /* HXHomeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeApi.m; sourceTree = "<group>"; };
 		BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeUITests/Pods-HXPoloHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE2AC74C4AFB40639A2F64E4 /* Pods-HXPoloHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7030C539265CD2554C53D8 /* Pods-HXPoloHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHomeTests/Pods-HXPoloHomeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +291,7 @@
 		96570A8A2213EED60040DE1B /* HXPoloHome */ = {
 			isa = PBXGroup;
 			children = (
+				96E554AB22EF4E180025C88C /* HXRouterModule */,
 				96AB2CAF227544DE00470719 /* HXAppLifeCycleModule */,
 				96AB2CAB227544BE00470719 /* HXMonitorModule */,
 				96AB2CA72275449500470719 /* HXNetworkModule */,
@@ -283,7 +299,7 @@
 				96AB2C9F2275446100470719 /* HXLogModule */,
 				96AB2C9A2275443C00470719 /* HXWebViewModule */,
 				96AB2C962275441800470719 /* HXDataModule */,
-				96AB2C7B2275434600470719 /* Module */,
+				96AB2C7B2275434600470719 /* BusinessModule */,
 				96E5012322142FB1004ECEAB /* HXKit */,
 				96570AC12213FBD10040DE1B /* HXMacros */,
 				96570ABD2213FBA30040DE1B /* HXConst */,
@@ -385,6 +401,7 @@
 		966861722295169200081C47 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				96E554B722EF4F820025C88C /* Api */,
 				9668617B229516B900081C47 /* Model */,
 				96686177229516A700081C47 /* View */,
 				966861732295169800081C47 /* Controller */,
@@ -413,8 +430,8 @@
 		9668617B229516B900081C47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9668617C229516DB00081C47 /* HXHomeModel.h */,
-				9668617D229516DB00081C47 /* HXHomeModel.m */,
+				96E554B022EF4EC20025C88C /* BusinessModel */,
+				96E554AF22EF4EB60025C88C /* DataModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -564,7 +581,7 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		96AB2C7B2275434600470719 /* Module */ = {
+		96AB2C7B2275434600470719 /* BusinessModule */ = {
 			isa = PBXGroup;
 			children = (
 				966861722295169200081C47 /* Home */,
@@ -575,12 +592,13 @@
 				96AB2C89227543AA00470719 /* Login */,
 				96AB2C7C2275435600470719 /* Base */,
 			);
-			path = Module;
+			path = BusinessModule;
 			sourceTree = "<group>";
 		};
 		96AB2C7C2275435600470719 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				96E554B922EF4FC20025C88C /* Api */,
 				96AB2C7F2275436F00470719 /* Model */,
 				96AB2C7E2275436A00470719 /* View */,
 				96AB2C7D2275436200470719 /* Controller */,
@@ -615,6 +633,8 @@
 			children = (
 				96AB2C86227543A100470719 /* HXModel.h */,
 				96AB2C87227543A100470719 /* HXModel.m */,
+				96E554B122EF4F320025C88C /* HXBusinessModel.h */,
+				96E554B222EF4F320025C88C /* HXBusinessModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -763,6 +783,51 @@
 				96AB2C782275426400470719 /* Foundation */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		96E554AB22EF4E180025C88C /* HXRouterModule */ = {
+			isa = PBXGroup;
+			children = (
+				96E554AC22EF4E320025C88C /* HXRouterConfig.h */,
+				96E554AD22EF4E320025C88C /* HXRouterConfig.m */,
+			);
+			path = HXRouterModule;
+			sourceTree = "<group>";
+		};
+		96E554AF22EF4EB60025C88C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9668617C229516DB00081C47 /* HXHomeModel.h */,
+				9668617D229516DB00081C47 /* HXHomeModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		96E554B022EF4EC20025C88C /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				96E554B422EF4F750025C88C /* HXHomeBisModel.h */,
+				96E554B522EF4F750025C88C /* HXHomeBisModel.m */,
+			);
+			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		96E554B722EF4F820025C88C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				96E554BD22EF4FFA0025C88C /* HXHomeApi.h */,
+				96E554BE22EF4FFA0025C88C /* HXHomeApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		96E554B922EF4FC20025C88C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				96E554BA22EF4FE20025C88C /* HXApi.h */,
+				96E554BB22EF4FE20025C88C /* HXApi.m */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		C5C39842BBBAC29EBE11865D /* Frameworks */ = {
@@ -1009,7 +1074,9 @@
 				96E5013D22144D50004ECEAB /* NSMutableArray+HX.m in Sources */,
 				96AB2CA62275448D00470719 /* HXCrashCenter.m in Sources */,
 				9668617E229516DB00081C47 /* HXHomeModel.m in Sources */,
+				96E554B622EF4F750025C88C /* HXHomeBisModel.m in Sources */,
 				96AB2C992275443200470719 /* HXDataCenter.m in Sources */,
+				96E554BC22EF4FE20025C88C /* HXApi.m in Sources */,
 				9668616D2295165200081C47 /* HXNFView.m in Sources */,
 				96570A9B2213EED70040DE1B /* main.m in Sources */,
 				96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */,
@@ -1020,10 +1087,13 @@
 				9668617A229516B600081C47 /* HXHomeView.m in Sources */,
 				966861A32295197E00081C47 /* HXMallController.m in Sources */,
 				96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */,
+				96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
 				966861642295120D00081C47 /* HXNavigationController.m in Sources */,
 				96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */,
+				96E554BF22EF4FFA0025C88C /* HXHomeApi.m in Sources */,
 				96E5014022144D59004ECEAB /* NSDictionary+HX.m in Sources */,
+				96E554AE22EF4E320025C88C /* HXRouterConfig.m in Sources */,
 				96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */,
 				96AB2C852275439700470719 /* HXBaseController.m in Sources */,
 				96686181229517E400081C47 /* HXTabBarController.m in Sources */,
