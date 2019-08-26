@@ -50,6 +50,7 @@
 - (CGSize)attrStrSizeWithFont:(UIFont *)font
                       maxSize:(CGSize)maxSize
                     lineSpace:(CGFloat)lineSpace;
+- (BOOL)isNonEmpty;
 
 @end
 

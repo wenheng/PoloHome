@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSString+HX.h"
 
 @interface NSMutableString (HX)
+
++ (NSMutableAttributedString *)attributedStringWithString:(NSString *)string
+                                                     font:(UIFont *)font
+                                                    color:(UIColor *)color
+                                              lineSpacing:(CGFloat)spacing;
+
 
 @end
 

@@ -137,11 +137,24 @@
 {
   NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
   paraStyle.lineSpacing = lineSpace;
+  paraStyle.lineBreakMode = NSLineBreakByWordWrapping;//换行模式为单词模式
   NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
   attrDict[NSFontAttributeName] = font;
   attrDict[NSParagraphStyleAttributeName] = paraStyle;
-  CGSize sizeToFit = [self boundingRectWithSize:maxSize options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attrDict context:nil].size;
-  return sizeToFit;
+  CGSize resultSize = [self boundingRectWithSize:maxSize options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attrDict context:nil].size;
+  return CGSizeMake(ceil(resultSize.width), ceil(resultSize.height));
+}
+
+- (BOOL)isNonEmpty
+{
+  NSMutableCharacterSet *emptyStringSet = [[NSMutableCharacterSet alloc] init];
+  [emptyStringSet formUnionWithCharacterSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+  [emptyStringSet formUnionWithCharacterSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
+  if (self.length == 0) {
+    return NO;
+  }
+  NSString *str = [self stringByTrimmingCharactersInSet:emptyStringSet];
+  return str.length > 0;
 }
 
 @end
