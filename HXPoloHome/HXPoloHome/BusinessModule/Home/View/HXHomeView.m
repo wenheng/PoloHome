@@ -27,10 +27,18 @@
 }
 
 #pragma mark -
+#pragma mark - Private Method
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"touches -- %@",touches);
+  NSLog(@"event -- %@",event);
+}
+
+#pragma mark -
 #pragma mark - UI Method
 - (void)addChildView
 {
-  self.backgroundColor = [UIColor orangeColor];
+  self.backgroundColor = [UIColor purpleColor];
   [self addSubview:self.titleLabel];
   self.titleLabel.frame = CGRectMake(0, 0, HXLen(100), HXLen(200));
 }
@@ -41,7 +49,7 @@
 {
   if(!_titleLabel) {
     _titleLabel = [[UILabel alloc] init];
-    _titleLabel.backgroundColor = [UIColor redColor];
+    _titleLabel.backgroundColor = [UIColor yellowColor];
   }
   return _titleLabel;
 }

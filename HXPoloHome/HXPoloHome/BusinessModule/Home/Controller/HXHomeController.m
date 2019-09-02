@@ -33,7 +33,8 @@
   CGFloat w = [UIApplication sharedApplication].keyWindow.frame.size.width;
   CGFloat h = [UIApplication sharedApplication].keyWindow.frame.size.height;
   self.view = [[HXHomeView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
-  NSLog(@"%@ --- 系统%@",NSStringFromCGRect(self.view.frame),[UIApplication sharedApplication]);
+  
+  NSLog(@"self.view.frame %@ ---",NSStringFromCGRect(self.view.frame));
 }
 - (void)viewDidLoad
 {

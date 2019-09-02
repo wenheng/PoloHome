@@ -17,9 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)push:(NSInteger)pageId;
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params;
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(id)delegate;
-{
-  
-}
 @end
 
 NS_ASSUME_NONNULL_END
