@@ -30,9 +30,21 @@
 #pragma mark - Private Method
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-  NSLog(@"touches -- %@",touches);
-  NSLog(@"event -- %@",event);
+  NSLog(@"%s,touches event -- %@",__func__,touches);
 }
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s,touches event -- %@",__func__,touches);
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s,touches event -- %@",__func__,touches);
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s,touches event -- %@",__func__,touches);
+}
+
 
 #pragma mark -
 #pragma mark - UI Method

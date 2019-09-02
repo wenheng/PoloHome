@@ -7,6 +7,7 @@
 //
 
 #import "CYLTabBarController.h"
+#import "HXBaseNavigationController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
