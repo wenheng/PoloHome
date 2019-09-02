@@ -28,12 +28,12 @@
 - (instancetype)init
 {
   if (self = [super init]) {
-    UIEdgeInsets imageInsets = UIEdgeInsetsZero;
-    UIOffset titlePositionAdjustment = UIOffsetMake(0, 0);
-    CYLTabBarController *tabrController = [CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController imageInsets:imageInsets titlePositionAdjustment:titlePositionAdjustment context:nil];
-    tabrController.delegate = self;
-    [self customizeTabBarAppearance:tabrController];
-    self = (HXTabBarController *)tabrController;
+//    UIEdgeInsets imageInsets = UIEdgeInsetsZero;
+//    UIOffset titlePositionAdjustment = UIOffsetMake(0, 0);
+//    CYLTabBarController *tabrController = [CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController imageInsets:imageInsets titlePositionAdjustment:titlePositionAdjustment context:nil];
+//    tabrController.delegate = self;
+//    [self customizeTabBarAppearance:tabrController];
+//    self = (HXTabBarController *)tabrController;
   }
   return self;
 }
@@ -43,7 +43,7 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 }
 - (void)dealloc
 {
