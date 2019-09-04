@@ -30,8 +30,39 @@
 #pragma mark - Private Method
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-  NSLog(@"touches -- %@",touches);
-  NSLog(@"event -- %@",event);
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+  NSLog(@"%s",__FUNCTION__);
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+  if ([self pointInside:CGPointMake(10, 10) withEvent:event]) {
+    NSLog(@"我的点在里面哈哈哈哈哈");
+  }
+  return self;
 }
 
 #pragma mark -
