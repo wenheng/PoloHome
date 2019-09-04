@@ -18,7 +18,8 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  NSLog(@"当前%@的view的尺寸 %@ ---",NSStringFromClass([self class]),NSStringFromCGRect(self.view.frame));
 }
 
 #pragma mark -

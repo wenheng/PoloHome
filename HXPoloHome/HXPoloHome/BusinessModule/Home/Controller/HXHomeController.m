@@ -34,17 +34,12 @@
   CGFloat h = [UIApplication sharedApplication].keyWindow.frame.size.height;
   self.view = [[HXHomeView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
   
-  NSLog(@"self.view.frame %@ ---",NSStringFromCGRect(self.view.frame));
 }
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.edgesForExtendedLayout = UIRectEdgeNone;
+//  self.edgesForExtendedLayout = UIRectEdgeNone;
 
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-  
 }
 
 - (void)testArray

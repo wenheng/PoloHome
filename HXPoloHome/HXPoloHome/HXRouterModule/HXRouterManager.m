@@ -68,11 +68,11 @@ static HXRouterManager *routerManager = nil;
 #pragma mark - Public Method
 - (void)push:(NSInteger)pageId
 {
-  
+  [self push:pageId params:@{}];
 }
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params
 {
-  
+  [self push:pageId params:params delegate:nil];
 }
 
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(id)delegate

@@ -43,7 +43,7 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 }
 - (void)dealloc
 {
