@@ -28,41 +28,62 @@
 
 #pragma mark -
 #pragma mark - Private Method
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//  NSArray *allTouches = [touches allObjects];
+//  UITouch *touch = [allTouches lastObject];
+//  CGPoint touchPoint = [touch locationInView:self];
+//  CGPoint po = [self convertPoint:touchPoint toView:self.titleLabel];
+//  NSLog(@"origin Point - %@",NSStringFromCGPoint(touchPoint));
+//  NSLog(@"end Point - %@",NSStringFromCGPoint(po));
+//  
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
+//{
+//  NSLog(@"%s",__FUNCTION__);
+//}
+//
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//  UIView *superView = [super hitTest:point withEvent:event];
+//  
+//  if ([self pointInside:CGPointMake(10, 10) withEvent:event]) {
+//    NSLog(@"我的点在里面哈哈哈哈哈");
+//  }
+//  return self;
+//}
+- (void)layoutSubviews
 {
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-  NSLog(@"%s",__FUNCTION__);
-}
-
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-  if ([self pointInside:CGPointMake(10, 10) withEvent:event]) {
-    NSLog(@"我的点在里面哈哈哈哈哈");
+  [super layoutSubviews];
+  CGFloat w = CGRectGetWidth(self.frame);
+  CGFloat h = CGRectGetHeight(self.frame);
+  if (h > w) {
+    self.titleLabel.frame = CGRectMake(0, 0, HXLen(100), HXLen(200));
   }
-  return self;
+  else {
+    self.titleLabel.frame = CGRectMake(0, 0, HXLen(200), HXLen(100));
+  }
 }
 
 #pragma mark -
@@ -71,7 +92,6 @@
 {
   self.backgroundColor = [UIColor purpleColor];
   [self addSubview:self.titleLabel];
-  self.titleLabel.frame = CGRectMake(0, 0, HXLen(100), HXLen(200));
 }
 
 #pragma mark -

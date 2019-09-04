@@ -38,13 +38,18 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-//  self.edgesForExtendedLayout = UIRectEdgeNone;
-
+  self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
-- (void)testArray
+- (void)viewDidLayoutSubviews
 {
-  NSLog(@"-----%@",self.view);
+  [super viewDidLayoutSubviews];
+  NSLog(@"viewDidLayoutSubviews");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+  NSLog(@"--");
 }
 
 @end
