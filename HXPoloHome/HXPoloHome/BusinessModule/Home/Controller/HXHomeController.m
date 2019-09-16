@@ -44,12 +44,15 @@
 - (void)viewDidLayoutSubviews
 {
   [super viewDidLayoutSubviews];
-  NSLog(@"viewDidLayoutSubviews");
+  NSLog(@"viewDidLayoutSubviews -- %@",self.view);
+  NSLog(@"tableViewFrame --- %@",NSStringFromCGRect(self.view.tableView.frame));
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-  NSLog(@"--");
+//  [self.view setNeedsLayout];
+//  [self.view layoutIfNeeded];
+  [self.view setNeedsDisplay];
 }
 
 @end
