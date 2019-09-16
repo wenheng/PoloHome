@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HXBaseController : UIViewController
 
-
 - (void)push:(NSInteger)pageId;
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params;
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(id)delegate;

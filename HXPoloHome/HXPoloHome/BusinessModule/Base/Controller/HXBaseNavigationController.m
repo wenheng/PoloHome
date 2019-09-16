@@ -21,6 +21,22 @@
   [super viewDidLoad];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+  return self.topViewController.preferredStatusBarStyle;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+  return self.topViewController.supportedInterfaceOrientations;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+  return self.topViewController.preferredInterfaceOrientationForPresentation;
+}
+- (BOOL)shouldAutorotate
+{
+  return self.topViewController.shouldAutorotate;
+}
+
 #pragma mark -
 #pragma mark - UINavigationControllerDelegate
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

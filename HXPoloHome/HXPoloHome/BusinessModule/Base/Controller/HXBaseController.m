@@ -15,6 +15,16 @@
 @implementation HXBaseController
 
 #pragma mark -
+#pragma mark - Init Method
+- (instancetype)init
+{
+  if (self = [super init]) {
+    
+  }
+  return self;
+}
+
+#pragma mark -
 #pragma mark - Life Cycle
 - (void)viewDidLoad
 {
@@ -22,6 +32,22 @@
   self.view.backgroundColor = [UIColor whiteColor];
   NSLog(@"当前%@的跟视图View的尺寸是 %@",NSStringFromClass([self class]),NSStringFromCGRect(self.view.frame));
 }
+
+#pragma mark -
+#pragma mark - 横竖屏设置
+//- (BOOL)shouldAutorotate
+//{
+//  return self.canAutorotate;
+//}
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//  return UIInterfaceOrientationMaskPortrait;
+//}
+//
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//  return UIInterfaceOrientationPortrait;
+//}
 
 #pragma mark -
 #pragma mark - Public Method

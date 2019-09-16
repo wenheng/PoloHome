@@ -70,8 +70,6 @@
   return viewControllers;
 }
 
-
-
 - (NSArray *)tabBarItemsAttributesForController
 {
   NSMutableDictionary *firstAttr = [NSMutableDictionary dictionary];
