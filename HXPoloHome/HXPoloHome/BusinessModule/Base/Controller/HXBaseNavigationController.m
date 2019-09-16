@@ -14,9 +14,23 @@
 
 @implementation HXBaseNavigationController
 
+#pragma mark -
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+}
+
+#pragma mark -
+#pragma mark - UINavigationControllerDelegate
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+  
+  if (self.childViewControllers.count > 0 ) {
+    viewController.hidesBottomBarWhenPushed = YES;
+  }
+  [super pushViewController:viewController animated:animated];
+  
 }
 
 @end

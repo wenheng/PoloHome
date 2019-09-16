@@ -8,6 +8,7 @@
 
 #import "HXHomeController.h"
 #import "HXHomeView.h"
+#import "HXHomeTestController.h"
 
 @interface HXHomeController ()
 
@@ -32,12 +33,14 @@
 {
   CGFloat w = [UIApplication sharedApplication].keyWindow.frame.size.width;
   CGFloat h = [UIApplication sharedApplication].keyWindow.frame.size.height;
+  CGFloat y = self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height;
   self.view = [[HXHomeView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
   
 }
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor purpleColor];
   self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
@@ -52,7 +55,10 @@
 {
 //  [self.view setNeedsLayout];
 //  [self.view layoutIfNeeded];
-  [self.view setNeedsDisplay];
+//  [self.view setNeedsDisplay];
+  
+  HXHomeTestController *testVC = [[HXHomeTestController alloc] init];
+  [self.navigationController pushViewController:testVC animated:YES];
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "HXNavigationController.h"
 
-@interface HXNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
+@interface HXNavigationController ()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, readonly) HXNavigationBar *navigationBar;
 

@@ -111,11 +111,40 @@
 {
   return 30;
 }
-
-
-
-
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSString *text = [NSString stringWithFormat:@"第%ld组 == %ld行",indexPath.section,indexPath.row];
+  NSLog(@"didSelectRowAtIndexPath -- %@",text);
+}
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSString *text = [NSString stringWithFormat:@"第%ld组 == %ld行",indexPath.section,indexPath.row];
+  NSLog(@"didDeselectRowAtIndexPath -- %@",text);
+}
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSLog(@"willDisplayCell -- ");
+}
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+  NSLog(@"willDisplayHeaderView -- ");
+}
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section
+{
+  NSLog(@"willDisplayFooterView -- ");
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+  NSLog(@"didEndDisplayingCell -- ");
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+  NSLog(@"didEndDisplayingHeaderView -- ");
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingFooterView:(UIView *)view forSection:(NSInteger)section
+{
+  NSLog(@"didEndDisplayingFooterView -- ");
+}
 
 
 
@@ -125,9 +154,8 @@
 #pragma mark - UI Method
 - (void)addChildView
 {
-  self.backgroundColor = [UIColor purpleColor];
 //  [self addSubview:self.titleLabel];
-  [self addSubview:self.tableView];
+//  [self addSubview:self.tableView];
 }
 
 #pragma mark -

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "HXRouterManager.h"
+#import "UIViewController+HXNaviBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

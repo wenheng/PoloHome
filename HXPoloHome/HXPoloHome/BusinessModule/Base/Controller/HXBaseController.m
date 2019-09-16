@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor whiteColor];
   NSLog(@"当前%@的跟视图View的尺寸是 %@",NSStringFromClass([self class]),NSStringFromCGRect(self.view.frame));
 }
 
