@@ -35,19 +35,19 @@
 
 #pragma mark -
 #pragma mark - 横竖屏设置
-//- (BOOL)shouldAutorotate
-//{
-//  return self.canAutorotate;
-//}
-//- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-//{
-//  return UIInterfaceOrientationMaskPortrait;
-//}
-//
-//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-//{
-//  return UIInterfaceOrientationPortrait;
-//}
+- (BOOL)shouldAutorotate
+{
+  return YES;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+  return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+  return UIInterfaceOrientationPortrait;
+}
 
 #pragma mark -
 #pragma mark - Public Method
