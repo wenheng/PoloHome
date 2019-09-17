@@ -8,10 +8,13 @@
 
 #import "HXHomeTestController.h"
 
+#import "HXFlowLayout.h"
+
 @interface HXHomeTestController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *collectionLayout;
+@property (nonatomic, strong) HXFlowLayout *myLayout;
 
 @end
 
@@ -60,7 +63,7 @@ static NSString *const footerId = @"footerId";
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-  return 15;
+  return 100;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -186,7 +189,7 @@ referenceSizeForFooterInSection:(NSInteger)section
 - (UICollectionView *)collectionView
 {
   if (!_collectionView) {
-    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.collectionLayout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.myLayout];
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.dataSource      = self;
     _collectionView.delegate        = self;
@@ -207,6 +210,15 @@ referenceSizeForFooterInSection:(NSInteger)section
   return _collectionLayout;
 }
 
+- (HXFlowLayout *)myLayout
+{
+  if (!_myLayout) {
+    _myLayout = [[HXFlowLayout alloc] init];
+    _myLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    _myLayout.itemCount = 100;
+  }
+  return _myLayout;
+}
 
 
 @end

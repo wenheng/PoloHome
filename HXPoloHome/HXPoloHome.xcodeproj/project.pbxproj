@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		527DAACB518703A713F9EFCC /* libPods-HXPoloHomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */; };
 		961717D4232F86DC009B8A4A /* HXHomeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D3232F86DC009B8A4A /* HXHomeTestController.m */; };
+		961717D72330AEE9009B8A4A /* HXFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D62330AEE9009B8A4A /* HXFlowLayout.m */; };
 		96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A8C2213EED60040DE1B /* AppDelegate.m */; };
 		96570A952213EED70040DE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96570A942213EED70040DE1B /* Assets.xcassets */; };
 		96570A9B2213EED70040DE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A9A2213EED70040DE1B /* main.m */; };
@@ -97,6 +98,8 @@
 		83E88470EF65B3407E8ADCD0 /* Pods-HXPoloHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome.debug.xcconfig"; sourceTree = "<group>"; };
 		961717D2232F86DC009B8A4A /* HXHomeTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeTestController.h; sourceTree = "<group>"; };
 		961717D3232F86DC009B8A4A /* HXHomeTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeTestController.m; sourceTree = "<group>"; };
+		961717D52330AEE9009B8A4A /* HXFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXFlowLayout.h; sourceTree = "<group>"; };
+		961717D62330AEE9009B8A4A /* HXFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXFlowLayout.m; sourceTree = "<group>"; };
 		96570A882213EED60040DE1B /* HXPoloHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXPoloHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96570A8B2213EED60040DE1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96570A8C2213EED60040DE1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -431,6 +434,8 @@
 			children = (
 				96686178229516B600081C47 /* HXHomeView.h */,
 				96686179229516B600081C47 /* HXHomeView.m */,
+				961717D52330AEE9009B8A4A /* HXFlowLayout.h */,
+				961717D62330AEE9009B8A4A /* HXFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1109,6 +1114,7 @@
 				96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */,
 				96AB2C852275439700470719 /* HXBaseController.m in Sources */,
 				96686181229517E400081C47 /* HXTabBarController.m in Sources */,
+				961717D72330AEE9009B8A4A /* HXFlowLayout.m in Sources */,
 				96686189229518F200081C47 /* HXMeController.m in Sources */,
 				96570AC02213FBC40040DE1B /* HXConsts.m in Sources */,
 				96AB2CA22275447300470719 /* HXLogCenter.m in Sources */,
