@@ -16,6 +16,7 @@ target 'HXPoloHome' do
   pod 'MBProgressHUD'
   pod 'MJRefresh'
   pod 'MJExtension'
+  pod 'IGListKit', '~> 3.4.0'
 
   target 'HXPoloHomeTests' do
     inherit! :search_paths

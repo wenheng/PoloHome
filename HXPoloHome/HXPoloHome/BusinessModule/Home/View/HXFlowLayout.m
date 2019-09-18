@@ -30,6 +30,21 @@
   CGFloat margin = (self.collectionView.frame.size.width - self.itemSize.width) / 2;
   self.collectionView.contentInset = UIEdgeInsetsMake(0, margin, 0, margin);
   
+  /*
+   思路：
+   1、UICollection的基本设置，并且创建一个继承自UICollectionViewFlowLayout的类。(不能是UICollectionViewLayout，否则全部都需要自定义)
+   
+   2、在UICollectionViewFlowLayout类中完成四步
+   
+   　　- 1）重写prepareLayout方法进行基本的布局（cell在最左面的时候是在正中间），不能在init中布局，因为设置collectionView尺寸是在viewDidLoad中，而init在它之前调用，获得的collectionView的尺寸是空的
+   
+   　　- 2）重写shouldInvalidateLayoutForBoundsChange，当collectionView的显示范围发生改变的时候，让其内部重新布局（即让cell滚动起来）
+   
+   　　- 3）重写layoutAttributesForElementsInRect方法，让cell在左右滑动的时候，尺寸放大或缩小
+   
+   　　- 4）重写targetContentOffsetForProposedContentOffset方法，让最接近中心的cell在停在正中央。
+   */
+  
 }
 /**
  这个方法返回我们的布局数组
@@ -107,5 +122,4 @@
   }
   return _attributeArray;
 }
-
 @end
