@@ -39,7 +39,8 @@ static NSString *const footerId = @"footerId";
 - (void)viewDidLayoutSubviews
 {
   [super viewDidLayoutSubviews];
-  self.collectionView.frame = self.view.bounds;
+  CGRect rect = CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.width * 0.6);
+  self.collectionView.frame = rect;
 }
 
 - (BOOL)shouldAutorotate
@@ -63,7 +64,7 @@ static NSString *const footerId = @"footerId";
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-  return 100;
+  return 10;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -106,7 +107,7 @@ static NSString *const footerId = @"footerId";
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-  return CGSizeMake(50, 50);
+  return CGSizeMake(250, 250);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout*)collectionViewLayout
@@ -126,18 +127,18 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
   return 10;
 }
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout*)collectionViewLayout
-referenceSizeForHeaderInSection:(NSInteger)section
-{
-  return CGSizeMake(self.view.frame.size.width, 50);
-}
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout*)collectionViewLayout
-referenceSizeForFooterInSection:(NSInteger)section
-{
-  return CGSizeMake(self.view.frame.size.width, 30);
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout*)collectionViewLayout
+//referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//  return CGSizeMake(self.view.frame.size.width, 50);
+//}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout*)collectionViewLayout
+//referenceSizeForFooterInSection:(NSInteger)section
+//{
+//  return CGSizeMake(self.view.frame.size.width, 30);
+//}
 
 #pragma mark -
 #pragma mark - UICollectionViewDelegate
@@ -192,7 +193,7 @@ referenceSizeForFooterInSection:(NSInteger)section
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.myLayout];
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.dataSource      = self;
-    _collectionView.delegate        = self;
+//    _collectionView.delegate        = self;
     
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellId];
     [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerId];
@@ -214,8 +215,7 @@ referenceSizeForFooterInSection:(NSInteger)section
 {
   if (!_myLayout) {
     _myLayout = [[HXFlowLayout alloc] init];
-    _myLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    _myLayout.itemCount = 100;
+    _myLayout.itemSize = CGSizeMake(160, 160);
   }
   return _myLayout;
 }

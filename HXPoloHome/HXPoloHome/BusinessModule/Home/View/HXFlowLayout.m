@@ -18,52 +18,84 @@
 
 #pragma mark -
 #pragma mark - Private Method
+//在这个方法中做一些初始化操作
 - (void)prepareLayout
 {
   [super prepareLayout];
   
-  //计算每一个item的宽度
-  CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - self.sectionInset.left - self.sectionInset.right - self.minimumInteritemSpacing)/2;
-  //定义数组保存每一列的高度
-  //这个数组的主要作用是保存每一列的总高度，这样在布局时，我们可以始终将下一个Item放在最短的列下面
-  CGFloat colHight[2] = {self.sectionInset.top,self.sectionInset.bottom};
-  //itemCount是外界传进来的item的个数 遍历来设置每一个item的布局
-  for (NSInteger i = 0; i<_itemCount; i++) {
-    //设置每个item的位置相关属性
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-    //创建一个布局属性类
-    UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    //随机一个高度
-    CGFloat height = arc4random() % 150 + 40;
-    //那一列高度小，则放到那一列下面
-    //标记最短的列
-    NSInteger colIndex = 0;
-    if (colHight[0] < colHight[1]) {
-      //将新的item高度加入到断的一列
-      colHight[0] = colHight[0] + height + self.minimumLineSpacing;
-      colIndex = 0;
-    }
-    else {
-      colHight[1] = colHight[1] + height + self.minimumLineSpacing;
-      colIndex = 1;
-    }
-    
-    //设置item的位置
-    attrs.frame = CGRectMake(self.sectionInset.left + (self.minimumInteritemSpacing+itemWidth)*colIndex, colHight[colIndex]-height-self.minimumLineSpacing, itemWidth, height);
-    [self.attributeArray addObject:attrs];
-  }
-
-  //设置itemSize来确保滑动范围的正确 这里是通过将所有的item高度平均化，计算出来的(以最高的列位标准)
-  if (colHight[0]>colHight[1]) {
-    self.itemSize = CGSizeMake(itemWidth, (colHight[0]-self.sectionInset.top)*2/_itemCount-self.minimumLineSpacing);
-  }else{
-    self.itemSize = CGSizeMake(itemWidth, (colHight[1]-self.sectionInset.top)*2/_itemCount-self.minimumLineSpacing);
-  }
+  //水平滚动
+  self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+  
+  //决定第一张图片所在的位置
+  CGFloat margin = (self.collectionView.frame.size.width - self.itemSize.width) / 2;
+  self.collectionView.contentInset = UIEdgeInsetsMake(0, margin, 0, margin);
+  
 }
-//这个方法返回我们的布局数组
+/**
+ 这个方法返回我们的布局数组
+ 这个数组中存放的都是UICollectionViewLayoutAttributes对象
+ UICollectionViewLayoutAttributes对象决定了cell的布局方式(frame等)
+ */
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-  return _attributeArray;
+  //让父类布局好样式
+  NSArray *arr = [super layoutAttributesForElementsInRect:rect];
+  //计算出collectionView的中心的位置
+  CGFloat ceterX = self.collectionView.contentOffset.x + self.collectionView.frame.size.width * 0.5;
+  /**
+  * 1.一个cell对应一个UICollectionViewLayoutAttributes对象
+  * 2.UICollectionViewLayoutAttributes对象决定了cell的frame
+  */
+   for (UICollectionViewLayoutAttributes *attributes in arr) {
+    //cell的中心点距离collectionView的中心点的距离，注意ABS()表示绝对值
+    CGFloat delta = ABS(attributes.center.x - ceterX);
+    //设置缩放比例
+     CGFloat scale = 1.1 - delta / self.collectionView.frame.size.width;
+    //设置cell滚动时候缩放的比例
+    attributes.transform = CGAffineTransformMakeScale(scale, scale);
+   }
+  return arr;
+}
+/*
+ 如果返回YES，那么collectionView显示的范围发生改变时，就会重新刷新布局
+ 一旦重新刷新布局，就会按顺序调用下面的方法
+ - prepareLayout
+ - layoutAttributesForElementsInRect:
+ 
+ */
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
+{
+  return YES;
+}
+/*
+ 作用：返回值决定了collectionView停止滚动时最终的偏移量contentOffset
+ 参数
+ proposedContentOffset:原本情况下，collectionView停止滚动时最终的偏移量
+ velocity: 滚动速度，通过这个参数可以了解滚动的方向
+ */
+
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
+{
+  // 计算出最终显示的矩形框
+  CGRect rect;
+  rect.origin.y = 0;
+  rect.origin.x = proposedContentOffset.x;
+  rect.size = self.collectionView.frame.size;
+  
+  //获得super已经计算好的布局的属性
+  NSArray *arr = [super layoutAttributesForElementsInRect:rect];
+  
+  //计算collectionView最中心点的x值
+  CGFloat centerX = proposedContentOffset.x + self.collectionView.frame.size.width * 0.5;
+  
+  CGFloat minDelta = MAXFLOAT;
+  for (UICollectionViewLayoutAttributes *attrs in arr) {
+    if (ABS(minDelta) > ABS(attrs.center.x - centerX)) {
+      minDelta = attrs.center.x - centerX;
+    }
+  }
+  proposedContentOffset.x += minDelta;
+  return proposedContentOffset;
 }
 
 #pragma mark -
