@@ -215,7 +215,6 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
   if (!_myLayout) {
     _myLayout = [[HXFlowLayout alloc] init];
-    _myLayout.itemSize = CGSizeMake(160, 160);
   }
   return _myLayout;
 }

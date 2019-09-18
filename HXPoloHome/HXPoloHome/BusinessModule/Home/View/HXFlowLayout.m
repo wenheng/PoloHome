@@ -25,7 +25,7 @@
   
   //水平滚动
   self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-  
+  self.itemSize = CGSizeMake(self.collectionView.frame.size.width - 150, 160);
   //决定第一张图片所在的位置
   CGFloat margin = (self.collectionView.frame.size.width - self.itemSize.width) / 2;
   self.collectionView.contentInset = UIEdgeInsetsMake(0, margin, 0, margin);
