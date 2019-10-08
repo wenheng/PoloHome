@@ -57,6 +57,59 @@ typedef NS_ENUM(NSUInteger, HXTimeIntervalType)
 @property (nonatomic, readonly) NSInteger nthWeekday; // e.g. 2nd Tuesday of the month == 2
 @property (nonatomic, readonly) NSInteger year;
 
++ (NSCalendar *)currentCalendar;
++ (NSDate *)dateTomorrow;
++ (NSDate *)dateYesterDay;
++ (NSDate *)dateWithDaysFromNow:(NSInteger)days;
++ (NSDate *)dateWithDaysBeforeNow:(NSInteger)days;
++ (NSDate *)dateWithHoursFromNow:(NSInteger)hours;
++ (NSDate *)dateWithHoursBeforeNow:(NSInteger)hours;
++ (NSDate *)dateWithMinutesFromNow:(NSInteger)minutes;
++ (NSDate *)dateWithMinutesBeforeNow:(NSInteger)minutes;
+- (NSString *)stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
+- (NSString *)stringWithFormat:(NSString *)format;
+- (BOOL)isEqualToDateIgnoringTime:(NSDate *)aDate;
+- (BOOL)isToday;
+- (BOOL)isTomorrow;
+- (BOOL)isYesterDay;
+- (BOOL)isSameWeekAsDate:(NSDate *)aDate;
+- (BOOL)isThisWeek;
+- (BOOL)isNextWeek;
+- (BOOL)isLastWeek;
+- (BOOL)isSameMonthAsDate:(NSDate *)aDate;
+- (BOOL)isThisMonth;
+- (BOOL)isNextMonth;
+- (BOOL)isLastMonth;
+- (BOOL)isSameYearsAsDate:(NSDate *)aDate;
+- (BOOL)isThisYear;
+- (BOOL)isNextYear;
+- (BOOL)isLastYear;
+- (BOOL)isEarlierThanDate:(NSDate *)aDate;
+- (BOOL)isLaterThanDate:(NSDate *)aDate;
+- (BOOL)isInFuture;
+- (BOOL)isInPast;
+- (BOOL)isTypicallyWorkDay;
+- (BOOL)isTypicallyWeekend;
+- (NSDate *)dateByAddingYears:(NSInteger)dYears;
+- (NSDate *)dateBySubtractingYears:(NSInteger)dYears;
+- (NSDate *)dateByAddingMonths:(NSInteger)dMonths;
+- (NSDate *)dateBySubtractingMonths:(NSInteger)dMonths;
+- (NSDate *)dateByAddingDays:(NSInteger)dDays;
+- (NSDate *)dateBySubtractingDays:(NSInteger)dDays;
+- (NSDate *)dateByAddingHours:(NSInteger)dHours;
+- (NSDate *)dateBySubtractingHours:(NSInteger)dHours;
+- (NSDate *)dateByAddingMinutes:(NSInteger)dMinutes;
+- (NSDate *)dateBySubtractingMinutes:(NSInteger)dMinutes;
+- (NSDate *)dateAtStartOfDay;
+- (NSDate *)dateAtEndOfDay;
+- (NSInteger)minutesAfterDate:(NSDate *)aDate;
+- (NSInteger)minutesBeforeDate:(NSDate *)aDate;
+- (NSInteger)hoursAfterDate:(NSDate *)aDate;
+- (NSInteger)hoursBeforeDate:(NSDate *)aDate;
+- (NSInteger)daysAfterDate:(NSDate *)aDate;
+- (NSInteger)daysBeforeDate:(NSDate *)aDate;
+- (NSInteger)distanceInDaysToDate:(NSDate *)anOhterDate;
+
 /**
  根据当前系统时间格式化成字符串
  
@@ -171,71 +224,7 @@ typedef NS_ENUM(NSUInteger, HXTimeIntervalType)
                                           toDate:(NSDate *)toDate
                                       toTimeZone:(NSString *)toTimeZone;
 
-+ (NSCalendar *)currentCalendar;
 
-+ (NSDate *)dateTomorrow;
-+ (NSDate *)dateYesterDay;
-+ (NSDate *)dateWithDaysFromNow:(NSInteger)days;
-+ (NSDate *)dateWithDaysBeforeNow:(NSInteger)days;
-
-+ (NSDate *)dateWithHoursFromNow:(NSInteger)hours;
-+ (NSDate *)dateWithHoursBeforeNow:(NSInteger)hours;
-+ (NSDate *)dateWithMinutesFromNow:(NSInteger)minutes;
-+ (NSDate *)dateWithMinutesBeforeNow:(NSInteger)minutes;
-
-- (NSString *)stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
-- (NSString *)stringWithFormat:(NSString *)format;
-
-- (BOOL)isEqualToDateIgnoringTime:(NSDate *)aDate;
-- (BOOL)isToday;
-- (BOOL)isTomorrow;
-- (BOOL)isYesterDay;
-
-- (BOOL)isSameWeekAsDate:(NSDate *)aDate;
-- (BOOL)isThisWeek;
-- (BOOL)isNextWeek;
-- (BOOL)isLastWeek;
-
-- (BOOL)isSameMonthAsDate:(NSDate *)aDate;
-- (BOOL)isThisMonth;
-- (BOOL)isNextMonth;
-- (BOOL)isLastMonth;
-
-- (BOOL)isSameYearsAsDate:(NSDate *)aDate;
-- (BOOL)isThisYear;
-- (BOOL)isNextYear;
-- (BOOL)isLastYear;
-
-- (BOOL)isEarlierThanDate:(NSDate *)aDate;
-- (BOOL)isLaterThanDate:(NSDate *)aDate;
-
-- (BOOL)isInFuture;
-- (BOOL)isInPast;
-
-- (BOOL)isTypicallyWorkDay;
-- (BOOL)isTypicallyWeekend;
-
-- (NSDate *)dateByAddingYears:(NSInteger)dYears;
-- (NSDate *)dateBySubtractingYears:(NSInteger)dYears;
-- (NSDate *)dateByAddingMonths:(NSInteger)dMonths;
-- (NSDate *)dateBySubtractingMonths:(NSInteger)dMonths;
-- (NSDate *)dateByAddingDays:(NSInteger)dDays;
-- (NSDate *)dateBySubtractingDays:(NSInteger)dDays;
-- (NSDate *)dateByAddingHours:(NSInteger)dHours;
-- (NSDate *)dateBySubtractingHours:(NSInteger)dHours;
-- (NSDate *)dateByAddingMinutes:(NSInteger)dMinutes;
-- (NSDate *)dateBySubtractingMinutes:(NSInteger)dMinutes;
-
-- (NSDate *)dateAtStartOfDay;
-- (NSDate *)dateAtEndOfDay;
-
-- (NSInteger)minutesAfterDate:(NSDate *)aDate;
-- (NSInteger)minutesBeforeDate:(NSDate *)aDate;
-- (NSInteger)hoursAfterDate:(NSDate *)aDate;
-- (NSInteger)hoursBeforeDate:(NSDate *)aDate;
-- (NSInteger)daysAfterDate:(NSDate *)aDate;
-- (NSInteger)daysBeforeDate:(NSDate *)aDate;
-- (NSInteger)distanceInDaysToDate:(NSDate *)anOhterDate;
 
 @end
 

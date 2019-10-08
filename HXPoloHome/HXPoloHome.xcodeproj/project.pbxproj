@@ -10,6 +10,8 @@
 		527DAACB518703A713F9EFCC /* libPods-HXPoloHomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */; };
 		961717D4232F86DC009B8A4A /* HXHomeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D3232F86DC009B8A4A /* HXHomeTestController.m */; };
 		961717D72330AEE9009B8A4A /* HXFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D62330AEE9009B8A4A /* HXFlowLayout.m */; };
+		964A3F7D233D9CBE00005835 /* HXWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F7C233D9CBE00005835 /* HXWeakProxy.m */; };
+		964A3F80233DA88700005835 /* HXInheritProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F7F233DA88700005835 /* HXInheritProxy.m */; };
 		96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A8C2213EED60040DE1B /* AppDelegate.m */; };
 		96570A952213EED70040DE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96570A942213EED70040DE1B /* Assets.xcassets */; };
 		96570A9B2213EED70040DE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A9A2213EED70040DE1B /* main.m */; };
@@ -100,6 +102,10 @@
 		961717D3232F86DC009B8A4A /* HXHomeTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeTestController.m; sourceTree = "<group>"; };
 		961717D52330AEE9009B8A4A /* HXFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXFlowLayout.h; sourceTree = "<group>"; };
 		961717D62330AEE9009B8A4A /* HXFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXFlowLayout.m; sourceTree = "<group>"; };
+		964A3F7B233D9CBE00005835 /* HXWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXWeakProxy.h; sourceTree = "<group>"; };
+		964A3F7C233D9CBE00005835 /* HXWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXWeakProxy.m; sourceTree = "<group>"; };
+		964A3F7E233DA88700005835 /* HXInheritProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXInheritProxy.h; sourceTree = "<group>"; };
+		964A3F7F233DA88700005835 /* HXInheritProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXInheritProxy.m; sourceTree = "<group>"; };
 		96570A882213EED60040DE1B /* HXPoloHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXPoloHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96570A8B2213EED60040DE1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96570A8C2213EED60040DE1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -273,6 +279,17 @@
 				BC605B6CFF3EFED84B8D07F1 /* Pods-HXPoloHomeUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		964A3F7A233D9CA100005835 /* HXProxy */ = {
+			isa = PBXGroup;
+			children = (
+				964A3F7B233D9CBE00005835 /* HXWeakProxy.h */,
+				964A3F7C233D9CBE00005835 /* HXWeakProxy.m */,
+				964A3F7E233DA88700005835 /* HXInheritProxy.h */,
+				964A3F7F233DA88700005835 /* HXInheritProxy.m */,
+			);
+			path = HXProxy;
 			sourceTree = "<group>";
 		};
 		96570A7F2213EED60040DE1B = {
@@ -782,6 +799,7 @@
 		96E5012322142FB1004ECEAB /* HXKit */ = {
 			isa = PBXGroup;
 			children = (
+				964A3F7A233D9CA100005835 /* HXProxy */,
 				9668615B229511AB00081C47 /* HXNavigationBar */,
 				96AB2CB42275457C00470719 /* UINavigationBarItemFix */,
 				96E50131221430B0004ECEAB /* Category */,
@@ -1083,6 +1101,7 @@
 				966861912295191C00081C47 /* HXMeModel.m in Sources */,
 				96AB2C95227543E700470719 /* HXLoginController.m in Sources */,
 				96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */,
+				964A3F80233DA88700005835 /* HXInheritProxy.m in Sources */,
 				966861AB229519AC00081C47 /* HXMallModel.m in Sources */,
 				96686161229511ED00081C47 /* HXNavigationBar.m in Sources */,
 				96AB2CBA227546E800470719 /* NSObject+HXRuntime.m in Sources */,
@@ -1103,6 +1122,7 @@
 				9668617A229516B600081C47 /* HXHomeView.m in Sources */,
 				966861A32295197E00081C47 /* HXMallController.m in Sources */,
 				96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */,
+				964A3F7D233D9CBE00005835 /* HXWeakProxy.m in Sources */,
 				96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
 				966861642295120D00081C47 /* HXNavigationController.m in Sources */,

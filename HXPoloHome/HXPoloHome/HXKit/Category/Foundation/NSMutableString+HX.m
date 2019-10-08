@@ -16,7 +16,7 @@
     NSAssert(0, @"请传递一个正常的字体参数");
   }
   if (!color) {
-    NSAssert(0, @"请传递一个正常的字体参数");
+    NSAssert(0, @"请传递一个正常的颜色参数");
   }
   
   if (![string isNonEmpty]) {
