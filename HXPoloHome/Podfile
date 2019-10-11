@@ -17,6 +17,7 @@ target 'HXPoloHome' do
   pod 'MJRefresh'
   pod 'MJExtension'
   pod 'IGListKit', '~> 3.4.0'
+  pod 'YLProgressBar', '~> 3.11.0'
 
   target 'HXPoloHomeTests' do
     inherit! :search_paths

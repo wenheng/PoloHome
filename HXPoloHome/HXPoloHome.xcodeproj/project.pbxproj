@@ -12,6 +12,7 @@
 		961717D72330AEE9009B8A4A /* HXFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D62330AEE9009B8A4A /* HXFlowLayout.m */; };
 		964A3F7D233D9CBE00005835 /* HXWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F7C233D9CBE00005835 /* HXWeakProxy.m */; };
 		964A3F80233DA88700005835 /* HXInheritProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F7F233DA88700005835 /* HXInheritProxy.m */; };
+		964A3F862340AF5900005835 /* HXWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F852340AF5900005835 /* HXWaterFlowLayout.m */; };
 		96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A8C2213EED60040DE1B /* AppDelegate.m */; };
 		96570A952213EED70040DE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96570A942213EED70040DE1B /* Assets.xcassets */; };
 		96570A9B2213EED70040DE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570A9A2213EED70040DE1B /* main.m */; };
@@ -106,6 +107,8 @@
 		964A3F7C233D9CBE00005835 /* HXWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXWeakProxy.m; sourceTree = "<group>"; };
 		964A3F7E233DA88700005835 /* HXInheritProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXInheritProxy.h; sourceTree = "<group>"; };
 		964A3F7F233DA88700005835 /* HXInheritProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXInheritProxy.m; sourceTree = "<group>"; };
+		964A3F842340AF5900005835 /* HXWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXWaterFlowLayout.h; sourceTree = "<group>"; };
+		964A3F852340AF5900005835 /* HXWaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXWaterFlowLayout.m; sourceTree = "<group>"; };
 		96570A882213EED60040DE1B /* HXPoloHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXPoloHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96570A8B2213EED60040DE1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96570A8C2213EED60040DE1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -453,6 +456,8 @@
 				96686179229516B600081C47 /* HXHomeView.m */,
 				961717D52330AEE9009B8A4A /* HXFlowLayout.h */,
 				961717D62330AEE9009B8A4A /* HXFlowLayout.m */,
+				964A3F842340AF5900005835 /* HXWaterFlowLayout.h */,
+				964A3F852340AF5900005835 /* HXWaterFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1061,17 +1066,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1084,6 +1088,7 @@
 				9668618D2295190200081C47 /* HXMeView.m in Sources */,
 				9668615E229511D700081C47 /* UIViewController+HXNaviBar.m in Sources */,
 				96AB2CB22275450100470719 /* HXAppLifeCycle.m in Sources */,
+				964A3F862340AF5900005835 /* HXWaterFlowLayout.m in Sources */,
 				96AB2C9E2275445900470719 /* HXWebController.m in Sources */,
 				96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */,
 				966861A72295199400081C47 /* HXMallView.m in Sources */,
