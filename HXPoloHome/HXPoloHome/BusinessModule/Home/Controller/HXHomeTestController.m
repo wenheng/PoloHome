@@ -107,7 +107,7 @@ static NSString *const footerId = @"footerId";
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-  return CGSizeMake(250, 250);
+  return CGSizeMake(50, 50);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout*)collectionViewLayout
