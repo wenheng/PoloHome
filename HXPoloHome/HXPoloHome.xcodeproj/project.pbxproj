@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		527DAACB518703A713F9EFCC /* libPods-HXPoloHomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */; };
+		960B9DDD2351B0BF002B8730 /* UINavigationSXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B9DDB2351B0BF002B8730 /* UINavigationSXFixSpace.m */; };
 		961717D4232F86DC009B8A4A /* HXHomeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D3232F86DC009B8A4A /* HXHomeTestController.m */; };
 		961717D72330AEE9009B8A4A /* HXFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 961717D62330AEE9009B8A4A /* HXFlowLayout.m */; };
 		964A3F7D233D9CBE00005835 /* HXWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A3F7C233D9CBE00005835 /* HXWeakProxy.m */; };
@@ -54,10 +55,6 @@
 		96AB2CB22275450100470719 /* HXAppLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB12275450100470719 /* HXAppLifeCycle.m */; };
 		96AB2CB7227545CE00470719 /* HXNavigationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB6227545CE00470719 /* HXNavigationConfig.m */; };
 		96AB2CBA227546E800470719 /* NSObject+HXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */; };
-		96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */; };
-		96AB2CC02275527C00470719 /* UINavigationBar+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */; };
-		96AB2CC3227553F400470719 /* UIViewController+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */; };
-		96AB2CC62275556400470719 /* UINavigationItem+HXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */; };
 		96E501342214314A004ECEAB /* NSString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E501332214314A004ECEAB /* NSString+HX.m */; };
 		96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013622143164004ECEAB /* NSMutableString+HX.m */; };
 		96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5013922144D48004ECEAB /* NSArray+HX.m */; };
@@ -99,6 +96,8 @@
 		03B08DBB95298EABD89C53AA /* libPods-HXPoloHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXPoloHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC7F0BC115FE0CDC303B09B /* libPods-HXPoloHomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXPoloHomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E88470EF65B3407E8ADCD0 /* Pods-HXPoloHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXPoloHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXPoloHome/Pods-HXPoloHome.debug.xcconfig"; sourceTree = "<group>"; };
+		960B9DDB2351B0BF002B8730 /* UINavigationSXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationSXFixSpace.m; sourceTree = "<group>"; };
+		960B9DDC2351B0BF002B8730 /* UINavigationSXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationSXFixSpace.h; sourceTree = "<group>"; };
 		961717D2232F86DC009B8A4A /* HXHomeTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeTestController.h; sourceTree = "<group>"; };
 		961717D3232F86DC009B8A4A /* HXHomeTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeTestController.m; sourceTree = "<group>"; };
 		961717D52330AEE9009B8A4A /* HXFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXFlowLayout.h; sourceTree = "<group>"; };
@@ -195,14 +194,6 @@
 		96AB2CB6227545CE00470719 /* HXNavigationConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNavigationConfig.m; sourceTree = "<group>"; };
 		96AB2CB8227546E800470719 /* NSObject+HXRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HXRuntime.h"; sourceTree = "<group>"; };
 		96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXRuntime.m"; sourceTree = "<group>"; };
-		96AB2CBB22754DF100470719 /* UIBarButtonItem+HXCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HXCreate.h"; sourceTree = "<group>"; };
-		96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HXCreate.m"; sourceTree = "<group>"; };
-		96AB2CBE2275527C00470719 /* UINavigationBar+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HXFixSpace.h"; sourceTree = "<group>"; };
-		96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HXFixSpace.m"; sourceTree = "<group>"; };
-		96AB2CC1227553F400470719 /* UIViewController+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HXFixSpace.h"; sourceTree = "<group>"; };
-		96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HXFixSpace.m"; sourceTree = "<group>"; };
-		96AB2CC42275556400470719 /* UINavigationItem+HXFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+HXFixSpace.h"; sourceTree = "<group>"; };
-		96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+HXFixSpace.m"; sourceTree = "<group>"; };
 		96E501322214314A004ECEAB /* NSString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HX.h"; sourceTree = "<group>"; };
 		96E501332214314A004ECEAB /* NSString+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HX.m"; sourceTree = "<group>"; };
 		96E5013522143164004ECEAB /* NSMutableString+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HX.h"; sourceTree = "<group>"; };
@@ -785,18 +776,12 @@
 		96AB2CB42275457C00470719 /* UINavigationBarItemFix */ = {
 			isa = PBXGroup;
 			children = (
+				960B9DDC2351B0BF002B8730 /* UINavigationSXFixSpace.h */,
+				960B9DDB2351B0BF002B8730 /* UINavigationSXFixSpace.m */,
 				96AB2CB5227545CE00470719 /* HXNavigationConfig.h */,
 				96AB2CB6227545CE00470719 /* HXNavigationConfig.m */,
 				96AB2CB8227546E800470719 /* NSObject+HXRuntime.h */,
 				96AB2CB9227546E800470719 /* NSObject+HXRuntime.m */,
-				96AB2CBB22754DF100470719 /* UIBarButtonItem+HXCreate.h */,
-				96AB2CBC22754DF100470719 /* UIBarButtonItem+HXCreate.m */,
-				96AB2CBE2275527C00470719 /* UINavigationBar+HXFixSpace.h */,
-				96AB2CBF2275527C00470719 /* UINavigationBar+HXFixSpace.m */,
-				96AB2CC1227553F400470719 /* UIViewController+HXFixSpace.h */,
-				96AB2CC2227553F400470719 /* UIViewController+HXFixSpace.m */,
-				96AB2CC42275556400470719 /* UINavigationItem+HXFixSpace.h */,
-				96AB2CC52275556400470719 /* UINavigationItem+HXFixSpace.m */,
 			);
 			path = UINavigationBarItemFix;
 			sourceTree = "<group>";
@@ -1104,13 +1089,13 @@
 				96686176229516A400081C47 /* HXHomeController.m in Sources */,
 				96AB2CB7227545CE00470719 /* HXNavigationConfig.m in Sources */,
 				966861912295191C00081C47 /* HXMeModel.m in Sources */,
+				960B9DDD2351B0BF002B8730 /* UINavigationSXFixSpace.m in Sources */,
 				96AB2C95227543E700470719 /* HXLoginController.m in Sources */,
 				96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */,
 				964A3F80233DA88700005835 /* HXInheritProxy.m in Sources */,
 				966861AB229519AC00081C47 /* HXMallModel.m in Sources */,
 				96686161229511ED00081C47 /* HXNavigationBar.m in Sources */,
 				96AB2CBA227546E800470719 /* NSObject+HXRuntime.m in Sources */,
-				96AB2CC62275556400470719 /* UINavigationItem+HXFixSpace.m in Sources */,
 				96E5013D22144D50004ECEAB /* NSMutableArray+HX.m in Sources */,
 				96AB2CA62275448D00470719 /* HXCrashCenter.m in Sources */,
 				9668617E229516DB00081C47 /* HXHomeModel.m in Sources */,
@@ -1120,13 +1105,10 @@
 				9668616D2295165200081C47 /* HXNFView.m in Sources */,
 				96570A9B2213EED70040DE1B /* main.m in Sources */,
 				96AB2CAE227544CE00470719 /* HXMonitorCenter.m in Sources */,
-				96AB2CC3227553F400470719 /* UIViewController+HXFixSpace.m in Sources */,
 				966861712295167D00081C47 /* HXNewFeatureController.m in Sources */,
-				96AB2CC02275527C00470719 /* UINavigationBar+HXFixSpace.m in Sources */,
 				96570A8D2213EED60040DE1B /* AppDelegate.m in Sources */,
 				9668617A229516B600081C47 /* HXHomeView.m in Sources */,
 				966861A32295197E00081C47 /* HXMallController.m in Sources */,
-				96AB2CBD22754DF100470719 /* UIBarButtonItem+HXCreate.m in Sources */,
 				964A3F7D233D9CBE00005835 /* HXWeakProxy.m in Sources */,
 				96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */,
 				96E5014622144D82004ECEAB /* NSData+HX.m in Sources */,
