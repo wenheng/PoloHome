@@ -30,14 +30,14 @@
 {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor whiteColor];
-  NSLog(@"当前%@的跟视图View的尺寸是 %@",NSStringFromClass([self class]),NSStringFromCGRect(self.view.frame));
+  NSLog(@"当前%@的self.View尺寸是 %@",NSStringFromClass([self class]),NSStringFromCGRect(self.view.frame));
 }
 
 #pragma mark -
 #pragma mark - 横竖屏设置
 - (BOOL)shouldAutorotate
 {
-  return YES;
+  return NO;
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {

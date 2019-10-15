@@ -56,10 +56,14 @@
 //  [self.view layoutIfNeeded];
 //  [self.view setNeedsDisplay];
   
-  NSMutableDictionary *params = [NSMutableDictionary dictionary];
-  params[@"userName"]  = @"张三";
-  params[@"userPhone"] = @"13878789090";
-  [self push:Page_Test_Index params:params.copy delegate:self];
+//  NSMutableDictionary *params = [NSMutableDictionary dictionary];
+//  params[@"userName"]  = @"张三";
+//  params[@"userPhone"] = @"13878789090";
+//  [self push:Page_Test_Index params:params.copy delegate:self];
+  
+//  [self push:Page_Test_Layout];
+  [self push:600001];
+  
 }
 
 @end

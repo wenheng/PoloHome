@@ -54,7 +54,7 @@
   self.classMap[@(Page_Discover_Index)] = @"HXDiscoverController";
   self.classMap[@(Page_User_Index)]     = @"HXMeController";
   self.classMap[@(Page_Test_Index)]     = @"HXHomeTestController";
-  self.classMap[@(Page_User_Index)]     = @"HXLayoutController";
+  self.classMap[@(Page_Test_Layout)]    = @"HXLayoutController";
   
   
 
