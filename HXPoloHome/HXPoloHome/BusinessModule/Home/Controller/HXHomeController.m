@@ -8,7 +8,6 @@
 
 #import "HXHomeController.h"
 #import "HXHomeView.h"
-#import "HXHomeTestController.h"
 
 @interface HXHomeController ()
 
@@ -57,8 +56,10 @@
 //  [self.view layoutIfNeeded];
 //  [self.view setNeedsDisplay];
   
-  HXHomeTestController *testVC = [[HXHomeTestController alloc] init];
-  [self.navigationController pushViewController:testVC animated:YES];
+  NSMutableDictionary *params = [NSMutableDictionary dictionary];
+  params[@"userName"]  = @"张三";
+  params[@"userPhone"] = @"13878789090";
+  [self push:Page_Test_Index params:params.copy delegate:self];
 }
 
 @end

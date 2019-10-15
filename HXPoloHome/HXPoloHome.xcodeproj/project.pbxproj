@@ -40,6 +40,8 @@
 		966861A32295197E00081C47 /* HXMallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966861A22295197E00081C47 /* HXMallController.m */; };
 		966861A72295199400081C47 /* HXMallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966861A62295199400081C47 /* HXMallView.m */; };
 		966861AB229519AC00081C47 /* HXMallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 966861AA229519AC00081C47 /* HXMallModel.m */; };
+		966AA1A5235568DF001F5942 /* HXLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966AA1A4235568DF001F5942 /* HXLayoutController.m */; };
+		966AA1AB235593F4001F5942 /* HXRouterRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 966AA1AA235593F4001F5942 /* HXRouterRegister.m */; };
 		96AB2C822275438300470719 /* HXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C812275438300470719 /* HXView.m */; };
 		96AB2C852275439700470719 /* HXBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C842275439700470719 /* HXBaseController.m */; };
 		96AB2C88227543A100470719 /* HXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB2C87227543A100470719 /* HXModel.m */; };
@@ -65,7 +67,6 @@
 		96E5014922144D8D004ECEAB /* NSMutableData+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014822144D8D004ECEAB /* NSMutableData+HX.m */; };
 		96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014B22144D98004ECEAB /* UIColor+HX.m */; };
 		96E5014F22144E64004ECEAB /* NSDate+HX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E5014E22144E64004ECEAB /* NSDate+HX.m */; };
-		96E554AE22EF4E320025C88C /* HXRouterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554AD22EF4E320025C88C /* HXRouterConfig.m */; };
 		96E554B322EF4F320025C88C /* HXBusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554B222EF4F320025C88C /* HXBusinessModel.m */; };
 		96E554B622EF4F750025C88C /* HXHomeBisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554B522EF4F750025C88C /* HXHomeBisModel.m */; };
 		96E554BC22EF4FE20025C88C /* HXApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E554BB22EF4FE20025C88C /* HXApi.m */; };
@@ -164,6 +165,10 @@
 		966861A62295199400081C47 /* HXMallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMallView.m; sourceTree = "<group>"; };
 		966861A9229519AC00081C47 /* HXMallModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMallModel.h; sourceTree = "<group>"; };
 		966861AA229519AC00081C47 /* HXMallModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMallModel.m; sourceTree = "<group>"; };
+		966AA1A3235568DF001F5942 /* HXLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXLayoutController.h; sourceTree = "<group>"; };
+		966AA1A4235568DF001F5942 /* HXLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXLayoutController.m; sourceTree = "<group>"; };
+		966AA1A9235593F4001F5942 /* HXRouterRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXRouterRegister.h; sourceTree = "<group>"; };
+		966AA1AA235593F4001F5942 /* HXRouterRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXRouterRegister.m; sourceTree = "<group>"; };
 		96AB2C802275438300470719 /* HXView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXView.h; sourceTree = "<group>"; };
 		96AB2C812275438300470719 /* HXView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXView.m; sourceTree = "<group>"; };
 		96AB2C832275439700470719 /* HXBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXBaseController.h; sourceTree = "<group>"; };
@@ -214,8 +219,6 @@
 		96E5014B22144D98004ECEAB /* UIColor+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HX.m"; sourceTree = "<group>"; };
 		96E5014D22144E64004ECEAB /* NSDate+HX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+HX.h"; sourceTree = "<group>"; };
 		96E5014E22144E64004ECEAB /* NSDate+HX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HX.m"; sourceTree = "<group>"; };
-		96E554AC22EF4E320025C88C /* HXRouterConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXRouterConfig.h; sourceTree = "<group>"; };
-		96E554AD22EF4E320025C88C /* HXRouterConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXRouterConfig.m; sourceTree = "<group>"; };
 		96E554B122EF4F320025C88C /* HXBusinessModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXBusinessModel.h; sourceTree = "<group>"; };
 		96E554B222EF4F320025C88C /* HXBusinessModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXBusinessModel.m; sourceTree = "<group>"; };
 		96E554B422EF4F750025C88C /* HXHomeBisModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeBisModel.h; sourceTree = "<group>"; };
@@ -436,6 +439,8 @@
 				96686175229516A400081C47 /* HXHomeController.m */,
 				961717D2232F86DC009B8A4A /* HXHomeTestController.h */,
 				961717D3232F86DC009B8A4A /* HXHomeTestController.m */,
+				966AA1A3235568DF001F5942 /* HXLayoutController.h */,
+				966AA1A4235568DF001F5942 /* HXLayoutController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -809,10 +814,10 @@
 		96E554AB22EF4E180025C88C /* HXRouterModule */ = {
 			isa = PBXGroup;
 			children = (
-				96E554AC22EF4E320025C88C /* HXRouterConfig.h */,
-				96E554AD22EF4E320025C88C /* HXRouterConfig.m */,
 				96E554C022EF53620025C88C /* HXRouterManager.h */,
 				96E554C122EF53620025C88C /* HXRouterManager.m */,
+				966AA1A9235593F4001F5942 /* HXRouterRegister.h */,
+				966AA1AA235593F4001F5942 /* HXRouterRegister.m */,
 			);
 			path = HXRouterModule;
 			sourceTree = "<group>";
@@ -1078,12 +1083,14 @@
 				96E5013A22144D48004ECEAB /* NSArray+HX.m in Sources */,
 				966861A72295199400081C47 /* HXMallView.m in Sources */,
 				9668619A2295195100081C47 /* HXDiscoverView.m in Sources */,
+				966AA1A5235568DF001F5942 /* HXLayoutController.m in Sources */,
 				961717D4232F86DC009B8A4A /* HXHomeTestController.m in Sources */,
 				96E5014922144D8D004ECEAB /* NSMutableData+HX.m in Sources */,
 				96AB2C92227543DA00470719 /* HXLoginView.m in Sources */,
 				966861962295194100081C47 /* HXDiscoverController.m in Sources */,
 				96E5014322144D77004ECEAB /* NSMutableDictionary+HX.m in Sources */,
 				96AB2C8F227543CF00470719 /* HXLoginModel.m in Sources */,
+				966AA1AB235593F4001F5942 /* HXRouterRegister.m in Sources */,
 				96AB2C88227543A100470719 /* HXModel.m in Sources */,
 				96E5013722143164004ECEAB /* NSMutableString+HX.m in Sources */,
 				96686176229516A400081C47 /* HXHomeController.m in Sources */,
@@ -1117,7 +1124,6 @@
 				96E5014C22144D98004ECEAB /* UIColor+HX.m in Sources */,
 				96E554BF22EF4FFA0025C88C /* HXHomeApi.m in Sources */,
 				96E5014022144D59004ECEAB /* NSDictionary+HX.m in Sources */,
-				96E554AE22EF4E320025C88C /* HXRouterConfig.m in Sources */,
 				96AB2CAA227544B400470719 /* HXNetworkCenter.m in Sources */,
 				96AB2C852275439700470719 /* HXBaseController.m in Sources */,
 				96686181229517E400081C47 /* HXTabBarController.m in Sources */,

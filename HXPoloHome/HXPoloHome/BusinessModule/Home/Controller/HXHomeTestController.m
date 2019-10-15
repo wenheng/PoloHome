@@ -37,6 +37,11 @@ static NSString *const footerId = @"footerId";
   self.edgesForExtendedLayout = UIRectEdgeNone;
   
   [self.view addSubview:self.collectionView];
+  
+  NSLog(@"用户名是 -- %@",self.userName);
+  NSLog(@"手机号 -- %@",self.userPhone);
+  NSLog(@"代理是 -- %@",self.delegate);
+  
 }
 - (void)viewDidLayoutSubviews
 {

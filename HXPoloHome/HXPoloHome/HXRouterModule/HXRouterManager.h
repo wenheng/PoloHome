@@ -7,16 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HXRouterConfig.h"
+#import "HXRouterRegister.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HXRouterManager : NSObject
 
+@property (nonatomic, readonly) HXRouterRegister *registerHelper;
+
 + (instancetype)sharedInstance;
-- (void)push:(NSInteger)pageId;
-- (void)push:(NSInteger)pageId params:(NSDictionary *)params;
-- (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(id)delegate;
+- (void)push:(NSInteger)pageId from:(UIViewController *)from params:(NSDictionary *)params delegate:(id)delegate;
+
+- (void)popFrom:(UIViewController *)from params:(NSDictionary *)params;
+- (void)popToRootFrom:(UIViewController *)from params:(NSDictionary *)params;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

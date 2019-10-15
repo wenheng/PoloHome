@@ -7,8 +7,12 @@
 //
 
 #import "HXRouterManager.h"
+#import <objc/runtime.h>
 
 @interface HXRouterManager ()
+
+@property (nonatomic, strong) HXRouterRegister *registerHelper;
+@property (nonatomic, assign) HXPage  currentPage;
 
 @end
 
@@ -54,7 +58,8 @@ static HXRouterManager *routerManager = nil;
 {
   static dispatch_once_t once;
   dispatch_once(&once , ^{
-    routerManager = [super allocWithZone:zone];
+    routerManager                = [super allocWithZone:zone];
+    [routerManager initData];
   });
   return routerManager;
 }
@@ -66,22 +71,74 @@ static HXRouterManager *routerManager = nil;
 
 #pragma mark -
 #pragma mark - Public Method
-- (void)push:(NSInteger)pageId
+- (void)push:(NSInteger)pageId from:(UIViewController *)from params:(NSDictionary *)params delegate:(id)delegate
 {
-  [self push:pageId params:@{}];
+  if (self.currentPage == pageId) return;
+  self.currentPage = pageId;
+  if (![self pageIsRegister:pageId]) return;
+  UIViewController *pageVC = [self viewControllerForPageId:pageId];
+  [self setData:params toPageVC:pageVC];
+  if ([pageVC respondsToSelector:@selector(setDelegate:)]) {
+    [pageVC performSelector:@selector(setDelegate:) withObject:delegate];
+  }
+  [self pushTo:pageVC from:from];
 }
-- (void)push:(NSInteger)pageId params:(NSDictionary *)params
+- (void)popFrom:(UIViewController *)from params:(NSDictionary *)params
 {
-  [self push:pageId params:params delegate:nil];
+  
 }
-
-- (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(id)delegate
+- (void)popToRootFrom:(UIViewController *)from params:(NSDictionary *)params
 {
   
 }
 
+
 #pragma mark -
 #pragma mark - Private Method
+- (BOOL)pageIsRegister:(NSInteger)pageId
+{
+  NSArray *allKeys = [self.registerHelper.pageMap allKeys];
+  BOOL hasRegister = NO;
+  if ([allKeys containsObject:@(pageId)]) {
+    hasRegister = YES;
+  }
+  else {
+    NSString *showDesc   = [NSString stringWithFormat:@"请检查当前页面是否注册路由表,页面PageId == %@",@(pageId)];
+    NSAssert(hasRegister == NO, showDesc);
+  }
+  return hasRegister;
+}
+- (UIViewController *)viewControllerForPageId:(NSInteger)pageId
+{
+  NSString *cls = self.registerHelper.pageMap[@(pageId)];
+  Class class = NSClassFromString(cls);
+  UIViewController *vc = [[class alloc] init];
+  return vc;
+}
+- (void)setData:(NSDictionary *)data toPageVC:(UIViewController *)pageVC
+{
+  if (![data isKindOfClass:[NSDictionary class]]) return;
+  [data enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+    objc_property_t property = class_getProperty([pageVC class], [key cStringUsingEncoding:NSUTF8StringEncoding]);
+    if (property != nil) {
+      [pageVC setValue:obj forKey:key];
+    }
+  }];
+  
+}
+- (void)pushTo:(UIViewController *)pageVC from:(UIViewController *)from
+{
+  self.currentPage = NSNotFound;
+  UIViewController *currentVC = [self getAppCurrentController];
+  [currentVC.navigationController pushViewController:pageVC animated:YES];
+}
+
+- (void)initData
+{
+  self.registerHelper = [[HXRouterRegister alloc] init];
+  self.currentPage    = NSNotFound;
+}
+
 - (UIViewController *)getAppRootController
 {
   return [UIApplication sharedApplication].keyWindow.rootViewController;
@@ -115,5 +172,8 @@ static HXRouterManager *routerManager = nil;
   }
   return currentController;
 }
+
+#pragma mark -
+#pragma mark - Getter
 
 @end

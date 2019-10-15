@@ -11,11 +11,7 @@
 #import "UIColor+HX.h"
 //controller
 #import "HXBaseNavigationController.h"
-#import "HXHomeController.h"
-#import "HXMallController.h"
-#import "HXDiscoverController.h"
-#import "HXMeController.h"
-
+#import "HXRouterManager.h"
 
 @interface HXTabBarController ()<UITabBarControllerDelegate,CYLTabBarControllerDelegate>
 
@@ -30,7 +26,7 @@
   if (self = [super init]) {
     UIEdgeInsets imageInsets = UIEdgeInsetsZero;
     UIOffset titlePositionAdjustment = UIOffsetMake(0, 0);
-    CYLTabBarController *tabrController = [CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController imageInsets:imageInsets titlePositionAdjustment:titlePositionAdjustment context:nil];
+    CYLTabBarController *tabrController = [CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController imageInsets:imageInsets titlePositionAdjustment:titlePositionAdjustment context:NULL];
     tabrController.delegate = self;
     [self customizeTabBarAppearance:tabrController];
     self = (HXTabBarController *)tabrController;
@@ -70,20 +66,20 @@
 
 - (NSArray *)viewControllers
 {
-  HXHomeController *firstVC = [[HXHomeController alloc] init];
-  HXBaseNavigationController *firstNav = [[HXBaseNavigationController alloc]
-                                      initWithRootViewController:firstVC];
-  HXMallController *secondVC = [[HXMallController alloc] init];
-  HXBaseNavigationController *secondNav = [[HXBaseNavigationController alloc]
-                                         initWithRootViewController:secondVC];
-  HXDiscoverController *thirdVC = [[HXDiscoverController alloc] init];
-  HXBaseNavigationController *thirdNav = [[HXBaseNavigationController alloc]
-                                              initWithRootViewController:thirdVC];
-  HXMeController *fourthVC = [[HXMeController alloc] init];
-  HXBaseNavigationController *fourthNav = [[HXBaseNavigationController alloc]
-                                          initWithRootViewController:fourthVC];
-  NSArray *viewControllers = @[firstNav,secondNav,thirdNav,fourthNav];
-  return viewControllers;
+  NSDictionary *pageMap    = [HXRouterManager sharedInstance].registerHelper.pageMap;
+  NSString *tab_FirstName  = pageMap[@(Page_Tab_First)];
+  NSString *tab_SecondName = pageMap[@(Page_Tab_Second)];
+  NSString *tab_ThirdName  = pageMap[@(Page_Tab_Third)];
+  NSString *tab_FourthName = pageMap[@(Page_Tab_Fourth)];
+  NSArray *tabArray = @[tab_FirstName,tab_SecondName,tab_ThirdName,tab_FourthName];
+  NSMutableArray *selectedArray = [NSMutableArray array];
+  for (NSString *cls in tabArray) {
+    Class class = NSClassFromString(cls);
+    UIViewController *vc = [[class alloc] init];
+    HXBaseNavigationController *nav = [[HXBaseNavigationController alloc] initWithRootViewController:vc];
+    [selectedArray addObject:nav];
+  }
+  return selectedArray.copy;
 }
 
 - (NSArray *)tabBarItemsAttributesForController

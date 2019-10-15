@@ -53,15 +53,17 @@
 #pragma mark - Public Method
 - (void)push:(NSInteger)pageId
 {
-  [[HXRouterManager sharedInstance] push:pageId];
+  id delegate = nil;
+  [[HXRouterManager sharedInstance] push:pageId from:self params:@{} delegate:delegate];
 }
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params
 {
-  [[HXRouterManager sharedInstance] push:pageId params:params];
+  id delegate = nil;
+  [[HXRouterManager sharedInstance] push:pageId from:self params:params delegate:delegate];
 }
 - (void)push:(NSInteger)pageId params:(NSDictionary *)params delegate:(nonnull id)delegate
 {
-  [[HXRouterManager sharedInstance] push:pageId params:params delegate:delegate];
+  [[HXRouterManager sharedInstance] push:pageId from:self params:params delegate:delegate];
 }
 
 @end
