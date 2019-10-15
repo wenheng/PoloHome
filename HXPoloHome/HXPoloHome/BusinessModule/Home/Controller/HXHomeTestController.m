@@ -9,12 +9,14 @@
 #import "HXHomeTestController.h"
 
 #import "HXFlowLayout.h"
+#import "HXWaterFlowLayout.h"
 
 @interface HXHomeTestController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *collectionLayout;
 @property (nonatomic, strong) HXFlowLayout *myLayout;
+@property (nonatomic, strong) HXWaterFlowLayout *waterLayout;
 
 @end
 
@@ -51,10 +53,10 @@ static NSString *const footerId = @"footerId";
 {
   return UIInterfaceOrientationMaskAll;
 }
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-  return UIInterfaceOrientationPortrait | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
-}
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//  return UIInterfaceOrientationPortrait | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
+//}
 
 #pragma mark -
 #pragma mark - UICollectionViewDataSource
@@ -190,7 +192,7 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 - (UICollectionView *)collectionView
 {
   if (!_collectionView) {
-    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.myLayout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.waterLayout];
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.dataSource      = self;
 //    _collectionView.delegate        = self;
@@ -218,6 +220,14 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
   }
   return _myLayout;
 }
+- (HXWaterFlowLayout *)waterLayout
+{
+  if (!_waterLayout) {
+    _waterLayout = [[HXWaterFlowLayout alloc] init];
+  }
+  return _waterLayout;
+}
+
 
 
 @end

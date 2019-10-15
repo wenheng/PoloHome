@@ -21,20 +21,22 @@
   [super viewDidLoad];
 }
 
+#pragma mark -
+#pragma mark - Private Method
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-  return self.topViewController.preferredStatusBarStyle;
+  return self.visibleViewController.preferredStatusBarStyle;
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-  return self.topViewController.supportedInterfaceOrientations;
+  return self.visibleViewController.supportedInterfaceOrientations;
 }
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-  return self.topViewController.preferredInterfaceOrientationForPresentation;
+  return self.visibleViewController.preferredInterfaceOrientationForPresentation;
 }
 - (BOOL)shouldAutorotate
 {
-  return self.topViewController.shouldAutorotate;
+  return self.visibleViewController.shouldAutorotate;
 }
 
 #pragma mark -
